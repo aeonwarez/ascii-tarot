@@ -3,29 +3,241 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ASCII-Tarot . previews</title>
+<title>ASCII-Tarot . card sheets</title>
 <style>
-  body { background:#000; color:#c8c8d8; margin:0; padding:2rem 1rem;
+  :root { --gold:#c9a23a; --lav:#8f8fb8; --ink:#c8c8d8; }
+  body { background:#000; color:var(--ink); margin:0; padding:2rem 1rem 4rem;
          font-family:"Courier New",Courier,monospace; }
-  h1 { text-align:center; color:#c9a23a; letter-spacing:.15em; font-weight:bold; }
-  p.sub { text-align:center; color:#666; margin-top:-.4rem; }
-  ul { list-style:none; padding:0; max-width:32rem; margin:2.5rem auto; }
-  li { margin:.6rem 0; }
-  a { display:block; padding:1rem 1.2rem; text-decoration:none;
-      color:#e8e4f8; background:#0d0d16; border:1px solid #2a2a40;
-      border-radius:8px; }
-  a:hover { border-color:#c9a23a; color:#fff; }
-  .num { color:#7a6fc0; }
+  h1 { text-align:center; color:var(--gold); letter-spacing:.18em; font-weight:bold; margin:0; }
+  p.sub { text-align:center; color:#666; margin:.3rem 0 2.5rem; }
+  section.card { border-top:1px solid #2a2a40; padding-top:2rem; margin-top:2.5rem; }
+  h2 { color:#e8e4f8; letter-spacing:.08em; margin:0 0 1.4rem; font-size:1.3rem; }
+  h2 .sig { color:#7a6fc0; font-weight:normal; font-size:.9rem; }
+  .row { display:flex; flex-wrap:wrap; gap:2.5rem; align-items:flex-start; }
+  .col-ref img { max-height:42rem; max-width:100%; border-radius:8px; }
+  .col-ascii pre { font-family:"Courier New",Courier,monospace; font-weight:bold;
+                   font-size:14px; line-height:1.2; margin:0; }
+  .col-list { flex:1; min-width:20rem; max-width:30rem; }
+  .col-list h3 { color:var(--gold); font-size:.95rem; letter-spacing:.05em;
+                 text-transform:uppercase; margin:0 0 .8rem; }
+  ol.checklist { list-style:none; counter-reset:item; padding:0; margin:0; }
+  ol.checklist li { counter-increment:item; position:relative;
+                    padding:.45rem 0 .45rem 2.2rem; border-bottom:1px solid #1a1a28;
+                    font-size:.9rem; line-height:1.4; }
+  ol.checklist li::before { content:counter(item); position:absolute; left:0; top:.45rem;
+                    width:1.5rem; height:1.5rem; text-align:center; line-height:1.5rem;
+                    border-radius:50%; font-size:.75rem; color:#000; background:var(--gold); }
+  li.t2::before { background:#7a6fc0; color:#fff; }
+  li.t3::before { background:#3a5a8f; color:#fff; }
+  li.t4::before { background:#2a2a40; color:#9a9ab0; }
+  li b { color:#e8e4f8; }
+  .tierkey { font-size:.72rem; color:#666; margin:.4rem 0 1rem; }
+  .tierkey span { padding:.05rem .5rem; border-radius:10px; margin-right:.4rem; color:#000; }
+  .k1{background:var(--gold);} .k2{background:#7a6fc0;color:#fff;}
+  .k3{background:#3a5a8f;color:#fff;} .k4{background:#2a2a40;color:#9a9ab0;}
+  figcaption { color:#555; text-align:center; margin-top:.6rem; font-size:.8rem; }
 </style>
 </head>
 <body>
 <h1>ASCII-TAROT</h1>
-<p class="sub">~ truecolor card previews ~</p>
-<ul>
-  <li><a href="drafts/00-fool-preview.html"><span class="num">0</span> &nbsp; The Fool</a></li>
-  <li><a href="drafts/17-star-preview.html"><span class="num">XVII</span> &nbsp; The Star</a></li>
-  <li><a href="drafts/17-star-compare.html"><span class="num">XVII</span> &nbsp; The Star (compare)</a></li>
-  <li><a href="drafts/18-moon-preview.html"><span class="num">XVIII</span> &nbsp; The Moon</a></li>
-</ul>
+<p class="sub">~ card sheets: reference &middot; ascii &middot; must-have elements ~</p>
+<div class="tierkey">
+  <span class="k1">1</span>tier 1 (the card IS this)
+  <span class="k2">2</span>tier 2 (named &amp; emphasized)
+  <span class="k3">3</span>tier 3 (supporting)
+  <span class="k4">4</span>tier 4 (fine detail)
+</div>
+
+<!-- ============ 0 THE FOOL ============ -->
+<section class="card">
+<h2>0 &middot; The Fool &nbsp;<span class="sig">aleph &middot; air &middot; the bornless spirit</span></h2>
+<div class="row">
+  <figure class="col-ref"><img src="reference/00-fool-card.jpg" alt="Thoth 0 The Fool (Harris)"><figcaption>Harris original</figcaption></figure>
+  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)==================[ 0 ]==================(+)=.</span>
+<span style="color:#8f8fb8">||                                               ||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#6a8fd4">::.           </span><span style="color:#c9a840">'              ·             '</span><span style="color:#6a8fd4">.::</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#6a8fd4">:.      </span><span style="color:#c9a840">'              ·             '       </span><span style="color:#6a8fd4">.:</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#6a8fd4">. </span><span style="color:#c9a840">'                  </span><span style="color:#e8c84a">, /\ ,                   </span><span style="color:#6a8fd4">.</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||           </span><span style="color:#c9a840">·</span><span style="color:#d8d8e8">/  </span><span style="color:#4a9950">,´   </span><span style="color:#e8c84a">(´(oo)`)  </span><span style="color:#4a9950">`,</span><span style="color:#d8d8e8">\       </span><span style="color:#c9a840">·      </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||     </span><span style="color:#c9a840">·   </span><span style="color:#d8d8e8">/       </span><span style="color:#4a9950">,=´ </span><span style="color:#e8c84a">`(~´)´ </span><span style="color:#4a9950">`=,   </span><span style="color:#c9a840">·</span><span style="color:#d8d8e8">\           </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||       </span><span style="color:#d8d8e8">/  </span><span style="color:#f0f0f8">__        </span><span style="color:#4a9950">_/   \_          </span><span style="color:#d8d8e8">\  </span><span style="color:#3a5a8f">,o,o,  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||      </span><span style="color:#d8d8e8">/</span><span style="color:#c9a840">' </span><span style="color:#f0f0f8">&lt;(´\_  </span><span style="color:#a8d8c8">/   </span><span style="color:#4a9950">|;;;;|    </span><span style="color:#a8d8c8">\</span><span style="color:#c8a8d8">\    </span><span style="color:#c9a840">'  </span><span style="color:#3a5a8f">(o,o,o) </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#c9a840">'   </span><span style="color:#d8d8e8">/        </span><span style="color:#a8d8c8">/ </span><span style="color:#c9a840">·   </span><span style="color:#4a9950">(;;;;)    </span><span style="color:#c9a840">' </span><span style="color:#a8d8c8">\ </span><span style="color:#c8a8d8">\     </span><span style="color:#3a5a8f">`o´o´  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||    </span><span style="color:#d8d8e8">(     </span><span style="color:#c9a840">· </span><span style="color:#c8a8d8">/</span><span style="color:#a8d8c8">(       </span><span style="color:#4a9950">);;(        </span><span style="color:#a8d8c8">)  </span><span style="color:#c8a8d8">\          </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#d8d8e8">(</span><span style="color:#c9a840">·     </span><span style="color:#c8a8d8">/ </span><span style="color:#a8d8c8">(       </span><span style="color:#4a9950">(;;;;)       </span><span style="color:#c9a840">·</span><span style="color:#a8d8c8">)     </span><span style="color:#a8c8e0">,-,-,  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#d8d8e8">(      </span><span style="color:#c8a8d8">( </span><span style="color:#a8d8c8">(</span><span style="color:#c9a840">'       </span><span style="color:#4a9950">|;;;;|         </span><span style="color:#a8d8c8">)   </span><span style="color:#a8c8e0">(o(o(o) </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#d8d8e8">(  </span><span style="color:#e09520">}v{   </span><span style="color:#a8d8c8">(        </span><span style="color:#4a9950">(;;;;;)        </span><span style="color:#a8d8c8">)  </span><span style="color:#a8c8e0">(o(o(o(o)</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#c9a840">'</span><span style="color:#d8d8e8">(      </span><span style="color:#c8a8d8">(  </span><span style="color:#a8d8c8">(   </span><span style="color:#c9a840">·    </span><span style="color:#ffaf2a">.=(o)=.        </span><span style="color:#a8d8c8">)   </span><span style="color:#a8c8e0">(o(o(o) </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#d8d8e8">(     </span><span style="color:#c8a8d8">( </span><span style="color:#c9a840">· </span><span style="color:#a8d8c8">(       </span><span style="color:#4a9950">/       \       </span><span style="color:#a8d8c8">)    </span><span style="color:#a8c8e0">`-`-´  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#d8d8e8">( </span><span style="color:#c9a840">·   </span><span style="color:#c8a8d8">(    </span><span style="color:#a8d8c8">(    </span><span style="color:#c9a840">'</span><span style="color:#4a9950">/;   </span><span style="color:#d8e8f5">¡  </span><span style="color:#4a9950">;\    </span><span style="color:#c9a840">· </span><span style="color:#a8d8c8">)            </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#d8d8e8">(     </span><span style="color:#c8a8d8">(   </span><span style="color:#c9a840">' </span><span style="color:#a8d8c8">(   </span><span style="color:#4a9950">/;    </span><span style="color:#d8e8f5">¡  </span><span style="color:#c9a840">·</span><span style="color:#4a9950">;\    </span><span style="color:#a8d8c8">)      </span><span style="color:#c9a840">'</span><span style="color:#c8a8d8">) </span><span style="color:#d8d8e8">)   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#d8d8e8">(   </span><span style="color:#c9a840">' </span><span style="color:#c8a8d8">(      </span><span style="color:#a8d8c8">\ </span><span style="color:#4a9950">/;  </span><span style="color:#c9a840">· </span><span style="color:#d8e8f5">,v,   </span><span style="color:#4a9950">;\  </span><span style="color:#a8d8c8">/   </span><span style="color:#e87830">,,´)       </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#d8d8e8">(    </span><span style="color:#c8a8d8">(      </span><span style="color:#c9a840">·</span><span style="color:#4a9950">/;           </span><span style="color:#c9a840">'</span><span style="color:#4a9950">;\   </span><span style="color:#e87830">&lt;,o.(_       </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#d8d8e8">(     </span><span style="color:#c8a8d8">(     </span><span style="color:#4a9950">/;   </span><span style="color:#a8d8c8">\  </span><span style="color:#c9a840">'    </span><span style="color:#a8d8c8">/  </span><span style="color:#4a9950">;\    </span><span style="color:#e87830">`==´;;`,   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#c9a840">·</span><span style="color:#d8d8e8">(    </span><span style="color:#c8a8d8">(    </span><span style="color:#4a9950">/; </span><span style="color:#c9a840">'              </span><span style="color:#4a9950">;\    </span><span style="color:#e87830">);;;;;;)</span><span style="color:#c9a840">' </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||    </span><span style="color:#d8d8e8">(    </span><span style="color:#c8a8d8">(</span><span style="color:#c9a840">' </span><span style="color:#4a9950">/;           </span><span style="color:#c9a840">·      </span><span style="color:#4a9950">;\  </span><span style="color:#e87830">(;;;;;;(   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||    </span><span style="color:#c9a840">'</span><span style="color:#d8d8e8">\    </span><span style="color:#c8a8d8">\</span><span style="color:#4a9950">;/      </span><span style="color:#c9a840">·             </span><span style="color:#4a9950">\   </span><span style="color:#e87830">`))´`))´  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||      </span><span style="color:#d8d8e8">\   </span><span style="color:#4a9950">;/</span><span style="color:#c8a8d8">\</span><span style="color:#c9a840">·             '      </span><span style="color:#4a9950">\;</span><span style="color:#c8a8d8">/ </span><span style="color:#d8d8e8">/   </span><span style="color:#c9a840">·    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#e8c84a">,==´  </span><span style="color:#c8a8d8">\      </span><span style="color:#c9a840">'             </span><span style="color:#e8c84a">`==,        </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#c9a840">·       </span><span style="color:#d8d8e8">\     </span><span style="color:#c9a840">' </span><span style="color:#c8a8d8">\            </span><span style="color:#c9a840">·</span><span style="color:#c8a8d8">/   </span><span style="color:#d8d8e8">/        </span><span style="color:#c9a840">'  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#6a8f4a">,--,</span><span style="color:#d8d8e8">\</span><span style="color:#6a8f4a">__,--, ___,-o-,_   </span><span style="color:#d8d8e8">/              </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#c9a840">' </span><span style="color:#6a8f4a">~&lt;=´ ;; `´ </span><span style="color:#d8d8e8">\</span><span style="color:#6a8f4a">;; `´ ;; ,=</span><span style="color:#d8d8e8">/</span><span style="color:#6a8f4a">&gt;                 </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#6a8f4a">`v´`v´ `v´ `v´`v´                      </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#c9a840">_,.-·-.,_,.-·-.,_,.-·-.,_,.-·-.,_,.-·-.,_   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#c9a840">·             '              ·             '   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#8a7a4a">aw    </span><span style="color:#c9a840">'              ·             '         </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#c9a840">'              ·             '              ·</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                                               ||</span>
+<span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
+<span style="color:#8f8fb8">||                   </span><span style="color:#c8c8d8">THE FOOL                    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                </span><span style="color:#c8c8d8">~ aleph · air ~                </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
+  <div class="col-list">
+    <h3>Must-have elements</h3>
+    <ol class="checklist">
+      <li class="t1"><b>Central horned figure</b> — pale, young, leaping mid-stride, head tilted back, both arms flung wide (Bacchus/Dionysus). The axis the card spins around.</li>
+      <li class="t1"><b>Prismatic rainbow vortex</b> — spiral of colored light coiling outward: warm core (yellow) → blue → red → violet. The spiral IS the card.</li>
+      <li class="t1"><b>Solar emblem at the groin</b> — small golden winged sun / solar disk. The "0 = All" made flesh.</li>
+      <li class="t1"><b>The dove ascending</b> — upper area near an open hand, rising. Holy Ghost / Venus.</li>
+      <li class="t2"><b>The tiger</b> — leaping at his lower right, teeth at his thigh. Fear/beast tearing at him, unheeded.</li>
+      <li class="t2"><b>The crocodile (Sebek)</b> — below, half in the Nile at his feet. The devourer-initiator.</li>
+      <li class="t2"><b>Grapes + coins</b> — vine/grape cluster (Bacchus fertility) and 2–3 coins carried loosely.</li>
+      <li class="t3"><b>The vulture (Maut)</b> — upper corner, the mother-goddess bird.</li>
+      <li class="t3"><b>The butterfly</b> — many-colored, fluttering (Greek psyche / soul).</li>
+      <li class="t3"><b>The caduceus / twin serpents</b> — coiling near the figure, union of opposites.</li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<!-- ============ XVII THE STAR ============ -->
+<section class="card">
+<h2>XVII &middot; The Star &nbsp;<span class="sig">hé &middot; aquarius &middot; the daughter of the firmament</span></h2>
+<div class="row">
+  <figure class="col-ref"><img src="reference/17-star-card.jpg" alt="Thoth XVII The Star (Harris)"><figcaption>Harris original</figcaption></figure>
+  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)================[ XVII ]=================(+)=.</span>
+<span style="color:#8f8fb8">||                                               ||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#e8e4f8">,  \ ' /          </span><span style="color:#f0ecff">+        </span><span style="color:#7a6fc0">_,.--·--.,_      </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#e8e4f8">`.  \|/  ,´              </span><span style="color:#7a6fc0">,-´           `-.,_ </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#e8e4f8">·--=((o))=--·       </span><span style="color:#f0ecff">.                       </span><span style="color:#7a6fc0">`, </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#e8e4f8">,´  / \ `.                </span><span style="color:#c9a23a">___             </span><span style="color:#f0ecff">·  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#e8e4f8">´   /   \                 </span><span style="color:#c9a23a">(o__) </span><span style="color:#e8e4f8">x             </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||    </span><span style="color:#e8e4f8">,     `,              </span><span style="color:#c9a23a">( \ /   </span><span style="color:#e8e4f8">´            </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                   </span><span style="color:#d9a0b8">_,.-- </span><span style="color:#c9a23a">)  `-´   </span><span style="color:#d9a0b8">_            </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                        </span><span style="color:#c9a23a">(           </span><span style="color:#d9a0b8">.\         </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#f0ecff">·                      </span><span style="color:#c9a23a">)      </span><span style="color:#b8c4e8">´    </span><span style="color:#d9a0b8">.  .:\      </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||            </span><span style="color:#d9a0b8">(     </span><span style="color:#b8c4e8">,~´`~,     -       </span><span style="color:#d9a0b8">. .::\    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||           </span><span style="color:#d9a0b8">·     </span><span style="color:#b8c4e8">´,cCCc.`,  ´       </span><span style="color:#e8e4f8">\¡/ ´ </span><span style="color:#d9a0b8">:)   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||          </span><span style="color:#d9a0b8">·       </span><span style="color:#b8c4e8">(((o)))  -      </span><span style="color:#e8e4f8">·-((o))-· </span><span style="color:#d9a0b8">)  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||         </span><span style="color:#d9a0b8">(  ·     </span><span style="color:#b8c4e8">,`--´,) ´         </span><span style="color:#e8e4f8">/¡\   ,</span><span style="color:#d9a0b8">:;) </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#7a6fc0">)      </span><span style="color:#d9a0b8">( ·      </span><span style="color:#b8c4e8">´ ,´ ,´          </span><span style="color:#d9a0b8">.  .:. ::.:;)</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#d9a0b8">(  ·     </span><span style="color:#b8c4e8">(  (  ´        </span><span style="color:#d9a0b8">..  ...::. ;;;)</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#7a6fc0">(       </span><span style="color:#d9a0b8">( ·      </span><span style="color:#b8c4e8">`.  `.       </span><span style="color:#d9a0b8">..  ... :..:;::;)</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#d9a0b8">(  ·      </span><span style="color:#b8c4e8">)    `,       </span><span style="color:#d9a0b8">... ::. :;: </span><span style="color:#c09040">}v{</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#d9a0b8">(   ·    </span><span style="color:#b8c4e8">(      )      </span><span style="color:#d9a0b8">. .::. ::::;;:;)</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||         </span><span style="color:#d9a0b8">( .   </span><span style="color:#b8c4e8">(  `,     )    </span><span style="color:#d9a0b8">:. :..::.:;;::;) </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||       </span><span style="color:#a8d4e0">.--.  </span><span style="color:#b8c4e8">,´  ,´)     `,    </span><span style="color:#d9a0b8">::. :.:;;::;;)  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#7a6fc0">`.   </span><span style="color:#a8d4e0">( ~~ )</span><span style="color:#b8c4e8">´   (  (      )   </span><span style="color:#d9a0b8">:. ::::;;:;;;)   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||       </span><span style="color:#a8d4e0">`)(´ </span><span style="color:#d9a0b8">`:  </span><span style="color:#b8c4e8">`,  `,    (   </span><span style="color:#d9a0b8">.:;::;;::;;:/    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#7a6fc0">,´     </span><span style="color:#a8d4e0">|¡|      </span><span style="color:#b8c4e8">)   )     )  </span><span style="color:#d9a0b8">;;:;;::;; </span><span style="color:#c09040">}v{    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#a8d4e0">| |     </span><span style="color:#b8c4e8">(   (     (   </span><span style="color:#d9a0b8">::;;:;;/         </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#a8d4e0">| |     </span><span style="color:#b8c4e8">`,´  `,    )  </span><span style="color:#d9a0b8">;;:/          </span><span style="color:#c09040">}v{</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||        </span><span style="color:#a8d4e0">| |     </span><span style="color:#b8c4e8">,´    ,)   (                   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#c090a8">,^, /\ </span><span style="color:#a8d4e0">| |    </span><span style="color:#b8c4e8">(    ,(´ ,   )           </span><span style="color:#8f2f3f">,o,    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#c090a8">´  `´ ` </span><span style="color:#a8d4e0">| |    </span><span style="color:#b8c4e8">(___,(´__,__,´_ </span><span style="color:#c8c0e0">&lt;&gt;   </span><span style="color:#8f2f3f">,o,    ,o, </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#8fa8c8">~.~^~.~ </span><span style="color:#a8d4e0">| | </span><span style="color:#8fa8c8">~</span><span style="color:#c8c0e0">_,/\._____,/\,_____./\,_,/\._/\,_ </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#8fa8c8">.~^~.~^ </span><span style="color:#a8d4e0">| | </span><span style="color:#8fa8c8">.</span><span style="color:#c8c0e0">/:·\/\:/&lt;:&gt;\:/·\/\::/&lt;&gt;\/::\/\:/\ </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#8fa8c8">~,^.~^~.~^~,.~^~.~</span><span style="color:#c8c0e0">\/´`\/;;\/´‾\/::\/´`\/;\/`´\ </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#8fa8c8">~.~^~ </span><span style="color:#55558a">aw </span><span style="color:#8fa8c8">~.~^~.~^~.~^~,.~^~.~^~.~^~,.~^~.~^~.  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                                               ||</span>
+<span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
+<span style="color:#8f8fb8">||                   </span><span style="color:#c8c8d8">THE STAR                    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||              </span><span style="color:#c8c8d8">~ heh · aquarius ~               </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
+  <div class="col-list">
+    <h3>Must-have elements</h3>
+    <ol class="checklist">
+      <li class="t1"><b>Nuith personified</b> — naked goddess kneeling (GD pose suggesting a whirling swastika).</li>
+      <li class="t1"><b>Golden cup held high</b>, pouring on her own head — eternal renewal, "milk of the stars"; cups fashioned as breasts.</li>
+      <li class="t1"><b>Silver cup in lowered left hand</b>, pouring on the land/water junction — Amrita, Nepenthe, blood of the Grail.</li>
+      <li class="t1"><b>Spiral vs. rectilinear energy</b> — every form spiral EXCEPT the silver cup's straight streams: the illusion of straightness that blinds humanity.</li>
+      <li class="t1"><b>The celestial globe</b> — "dominates the card"; the whole heavens (not Earth), pink/rose in the painting.</li>
+      <li class="t2"><b>Three seven-pointed Stars of Babalon/Venus</b> — largest upper-left spinning CCW, middle on the sphere, smallest star-seed tumbling from the gold cup.</li>
+      <li class="t2"><b>Land/water junction</b> — Sea of Binah meeting the fertile shore.</li>
+      <li class="t3"><b>Whirling clouds as her hair</b> — "my hair the trees of Eternity," hiding the Abyss.</li>
+      <li class="t3"><b>Three roses</b>, right corner — fertility, Venus, love.</li>
+      <li class="t3"><b>Star field</b> — "nothingness with twinkles... but what twinkles!"</li>
+      <li class="t3"><b>River / hills</b> — river flows at the bottom, hills on the distant shore.</li>
+      <li class="t4"><b>Five butterflies</b>, lower right — liberated souls past the Abyss (5 = spirit).</li>
+      <li class="t4"><b>Crystalline earth</b> — seven-sided translucent solids; the geometry of matter.</li>
+      <li class="t4"><b>Pyramid City</b> across the sea — home of enlightened souls (Babalon, Lady of the City of Pyramids).</li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<!-- ============ XVIII THE MOON ============ -->
+<section class="card">
+<h2>XVIII &middot; The Moon &nbsp;<span class="sig">qoph &middot; pisces &middot; the gateway of resurrection</span></h2>
+<div class="row">
+  <figure class="col-ref"><img src="reference/18-moon-card.jpg" alt="Thoth XVIII The Moon (Harris)"><figcaption>Harris original</figcaption></figure>
+  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)================[ XVIII ]================(+)=.</span>
+<span style="color:#8f8fb8">||                                               ||</span>
+<span style="color:#8f8fb8">||                 </span><span style="color:#e8d8a0">_,,--‾‾--,,_                  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#4a5288">,--,_      </span><span style="color:#e8d8a0">,-´          `-,         </span><span style="color:#4a5288">_,--,   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#4a5288">(:¡::,`,   </span><span style="color:#e8d8a0">(    </span><span style="color:#c23a4a">,~·~~·-,   </span><span style="color:#e8d8a0">)       </span><span style="color:#4a5288">,´,::¡:)  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#4a5288">|::::| `, </span><span style="color:#e8d8a0">(   </span><span style="color:#c23a4a">`-~~·~´     </span><span style="color:#e8d8a0">)     </span><span style="color:#4a5288">,´ |::::|   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#4a5288">|:¡::|   `,</span><span style="color:#e8d8a0">`-,          ,-´   </span><span style="color:#4a5288">,´   |::¡:|   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#4a5288">|::::|    `,  </span><span style="color:#e8d8a0">‾``--,,--´´‾   </span><span style="color:#4a5288">,´    |::::|   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#4a5288">,´:::::`,   `, </span><span style="color:#b8c8d8">\           / </span><span style="color:#4a5288">,´   ,´:::::`,  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#4a5288">|:::::::|,   `,</span><span style="color:#b8c8d8">\   </span><span style="color:#c23a4a">,   ,   </span><span style="color:#b8c8d8">/</span><span style="color:#4a5288">,´   ,|:::::::|  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#4a5288">(:::::::::`--,_</span><span style="color:#d4884a">¡</span><span style="color:#b8c8d8">\         /</span><span style="color:#d4884a">¡</span><span style="color:#4a5288">_,--´:::::::::)  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#4a5288">(::::::   </span><span style="color:#d4884a">,/\,</span><span style="color:#4a5288">_ </span><span style="color:#d4884a">|</span><span style="color:#b8c8d8">\    </span><span style="color:#c23a4a">,    </span><span style="color:#b8c8d8">/</span><span style="color:#d4884a">| </span><span style="color:#4a5288">_</span><span style="color:#d4884a">,/\,   </span><span style="color:#4a5288">::::::) </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#4a5288">(:::::::  </span><span style="color:#d4884a">&lt;´-:(</span><span style="color:#4a5288">:`</span><span style="color:#d4884a">|</span><span style="color:#b8c8d8">\         /</span><span style="color:#d4884a">|</span><span style="color:#4a5288">´:</span><span style="color:#d4884a">):-`&gt;  </span><span style="color:#4a5288">:::::::)</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||            </span><span style="color:#d4884a">);;( | </span><span style="color:#b8c8d8">\ </span><span style="color:#c23a4a">,   , </span><span style="color:#b8c8d8">/ </span><span style="color:#d4884a">| );;(            </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||           </span><span style="color:#d4884a">|;==;|| </span><span style="color:#b8c8d8">\       / </span><span style="color:#d4884a">||;==;|           </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||       </span><span style="color:#c23a4a">+o  </span><span style="color:#d4884a">(;;;;(| </span><span style="color:#b8c8d8">\   </span><span style="color:#c23a4a">,   </span><span style="color:#b8c8d8">/ </span><span style="color:#d4884a">|);;;;)  </span><span style="color:#c23a4a">o+       </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||            </span><span style="color:#d4884a">);;( |  </span><span style="color:#b8c8d8">\     /  </span><span style="color:#d4884a">| );;(            </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||           </span><span style="color:#d4884a">´|  |`|  </span><span style="color:#b8c8d8">\ </span><span style="color:#c23a4a">, , </span><span style="color:#b8c8d8">/  </span><span style="color:#d4884a">|´|  |`           </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#4a5288">_,,__,´‾`,_     </span><span style="color:#d4884a">´`  </span><span style="color:#b8c8d8">\     /  </span><span style="color:#d4884a">´`     </span><span style="color:#4a5288">_,´‾`,__,,_</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#4a5288">:::::::::::,_        </span><span style="color:#b8c8d8">\ </span><span style="color:#c23a4a">, </span><span style="color:#b8c8d8">/        </span><span style="color:#4a5288">_,:::::::::::</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#4a5288">::</span><span style="color:#7a7a8a">&gt;o´)\,             </span><span style="color:#b8c8d8">\   /             </span><span style="color:#7a7a8a">,/(`o&lt;</span><span style="color:#4a5288">::</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#7a7a8a">´´ ``             </span><span style="color:#b8c8d8">\</span><span style="color:#e07840">,¡,</span><span style="color:#b8c8d8">/             </span><span style="color:#7a7a8a">´´ ``   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#4a5288">‾‾--,,__             </span><span style="color:#e07840">(´¡`)             </span><span style="color:#4a5288">__,,--‾‾</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                    </span><span style="color:#e07840">(:´¡`:)                    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#8a98b0">-----------------------------------------------</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#c25a5a">,-,             </span><span style="color:#e8ce7a">_,,--‾‾--,,_              </span><span style="color:#c25a5a">,-, </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#c25a5a">/   \</span><span style="color:#5a78c2">,-,       </span><span style="color:#e8ce7a">,-´   </span><span style="color:#ffaf2a">_(o)_   </span><span style="color:#e8ce7a">`-,       </span><span style="color:#5a78c2">,-,</span><span style="color:#c25a5a">/   \</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#c25a5a">´   </span><span style="color:#5a78c2">/</span><span style="color:#c25a5a">`, </span><span style="color:#5a78c2">\     </span><span style="color:#e8ce7a">(     </span><span style="color:#9a9aa8">\,(¡),/     </span><span style="color:#e8ce7a">)     </span><span style="color:#5a78c2">/ </span><span style="color:#c25a5a">,´</span><span style="color:#5a78c2">\   </span><span style="color:#c25a5a">`</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#5a78c2">´     `,   </span><span style="color:#e8ce7a">(      </span><span style="color:#9a9aa8">´)¡(`      </span><span style="color:#e8ce7a">)   </span><span style="color:#5a78c2">,´     `   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#c25a5a">,-,    </span><span style="color:#8a98b0">--     </span><span style="color:#e8ce7a">`-,   </span><span style="color:#9a9aa8">,´ `,   </span><span style="color:#e8ce7a">,-´     </span><span style="color:#8a98b0">--    </span><span style="color:#c25a5a">,-, </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#c25a5a">/   \_           </span><span style="color:#e8ce7a">‾``--,,--´´‾            </span><span style="color:#c25a5a">_/   \</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#5a78c2">,-,   </span><span style="color:#8a98b0">--                         --   </span><span style="color:#5a78c2">,-,   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||  </span><span style="color:#5a78c2">/   \                                 /   \  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#8a98b0">---</span><span style="color:#55558a">aw</span><span style="color:#8a98b0">------------------------------------------</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                                               ||</span>
+<span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
+<span style="color:#8f8fb8">||                   </span><span style="color:#c8c8d8">THE MOON                    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||               </span><span style="color:#c8c8d8">~ qoph · pisces ~               </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
+  <div class="col-list">
+    <h3>Must-have elements</h3>
+    <ol class="checklist">
+      <li class="t1"><b>Bilateral symmetry</b> — the whole card mirrors on the vertical axis.</li>
+      <li class="t1"><b>The great moon orb, top center</b> — pale gold, waning, red serpentine swirl inside, flanked by the towers.</li>
+      <li class="t1"><b>The V-cone of tainted light</b> — pale stream widening from the moon, narrowing DOWN to a flame-point at bottom center; serum tinged with blood.</li>
+      <li class="t1"><b>Nine drops of impure blood, Yod-shaped</b> — exactly nine, falling inside the cone.</li>
+      <li class="t1"><b>Khephra the scarab bearing the solar disk</b> — bottom, under the water, in a gold-ringed aura; the sun carried through midnight (emotional heart of the card).</li>
+      <li class="t2"><b>Two black towers of nameless mystery</b> — on the hills, upper corners, hooded with tiny lit windows.</li>
+      <li class="t2"><b>Twin Anubis</b> — jackal-headed guardians between the Ways, tall staffs, Mercury symbol in hand.</li>
+      <li class="t2"><b>The jackals at their feet</b> — small black beasts on watch.</li>
+      <li class="t3"><b>Pool of blood-tinged water</b> — horizontal ripple lines.</li>
+      <li class="t3"><b>Red-and-blue bell-curve wave-mountains</b> — flanking the aura (Harris's signature waveforms).</li>
+      <li class="t3"><b>Starless indigo sky</b> — keep it empty; the darkness IS the atmosphere.</li>
+    </ol>
+  </div>
+</div>
+</section>
+
 </body>
 </html>
