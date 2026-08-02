@@ -1,65 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ASCII-Tarot . card sheets</title>
+<title>ASCII Tarot — the Thoth deck, after jgs</title>
 <style>
-  :root { --gold:#c9a23a; --lav:#8f8fb8; --ink:#c8c8d8; }
-  body { background:#000; color:var(--ink); margin:0; padding:2rem 1rem 4rem;
-         font-family:"Courier New",Courier,monospace; }
-  h1 { text-align:center; color:var(--gold); letter-spacing:.18em; font-weight:bold; margin:0; }
-  p.sub { text-align:center; color:#666; margin:.3rem 0 2.5rem; }
-  section.card { border-top:1px solid #2a2a40; padding-top:2rem; margin-top:2.5rem; }
-  h2 { color:#e8e4f8; letter-spacing:.08em; margin:0 0 1.4rem; font-size:1.3rem; }
-  h2 .sig { color:#7a6fc0; font-weight:normal; font-size:.9rem; }
-  .row { display:flex; flex-wrap:wrap; gap:2.5rem; align-items:flex-start; }
-  .col-ref img { max-height:42rem; max-width:100%; border-radius:8px; }
-  .col-ascii pre { font-family:"Courier New",Courier,monospace; font-weight:bold;
-                   font-size:14px; line-height:1.2; margin:0; }
-  .col-list { flex:1; min-width:20rem; max-width:30rem; }
-  .col-list h3 { color:var(--gold); font-size:.95rem; letter-spacing:.05em;
-                 text-transform:uppercase; margin:0 0 .8rem; }
-  ol.checklist { list-style:none; counter-reset:item; padding:0; margin:0; }
-  ol.checklist li { counter-increment:item; position:relative;
-                    padding:.45rem 0 .45rem 2.2rem; border-bottom:1px solid #1a1a28;
-                    font-size:.9rem; line-height:1.4; }
-  ol.checklist li::before { content:counter(item); position:absolute; left:0; top:.45rem;
-                    width:1.5rem; height:1.5rem; text-align:center; line-height:1.5rem;
-                    border-radius:50%; font-size:.75rem; color:#000; background:var(--gold); }
-  li.t2::before { background:#7a6fc0; color:#fff; }
-  li.t3::before { background:#3a5a8f; color:#fff; }
-  li.t4::before { background:#2a2a40; color:#9a9ab0; }
-  li b { color:#e8e4f8; }
-  .tierkey { font-size:.72rem; color:#666; margin:.4rem 0 1rem; }
-  .tierkey span { padding:.05rem .5rem; border-radius:10px; margin-right:.4rem; color:#000; }
-  .k1{background:var(--gold);} .k2{background:#7a6fc0;color:#fff;}
-  .k3{background:#3a5a8f;color:#fff;} .k4{background:#2a2a40;color:#9a9ab0;}
-  figcaption { color:#555; text-align:center; margin-top:.6rem; font-size:.8rem; }
-  section.ph { opacity:.8; }
-  .ph-img { width:22rem; max-width:100%; aspect-ratio:70/110; border:1px dashed #3a3a55;
-            border-radius:8px; display:flex; align-items:center; justify-content:center;
-            color:#555; font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; }
-  .ph .col-ascii pre { color:#6a6a90; font-weight:bold; }
-  .ph .col-list p { color:#666; font-size:.88rem; line-height:1.5; margin:0; }
-</style>
-</head>
-<body>
-<h1>ASCII-TAROT</h1>
-<p class="sub">~ card sheets: reference &middot; ascii &middot; must-have elements ~</p>
-<div class="tierkey">
-  <span class="k1">1</span>tier 1 (the card IS this)
-  <span class="k2">2</span>tier 2 (named &amp; emphasized)
-  <span class="k3">3</span>tier 3 (supporting)
-  <span class="k4">4</span>tier 4 (fine detail)
-</div>
-
-<!-- ============ 0 THE FOOL ============ -->
-<section class="card">
-<h2>0 &middot; The Fool &nbsp;<span class="sig">aleph &middot; air &middot; the bornless spirit</span></h2>
-<div class="row">
-  <figure class="col-ref"><img src="reference/00-fool-card.jpg" alt="Thoth 0 The Fool (Harris)"><figcaption>Harris original</figcaption></figure>
-  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)==================[ 0 ]==================(+)=.</span>
+  body { background: #000; color: #c8c8d8; margin: 2rem;
+         font-family: "Courier New", Courier, monospace; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  h1 { font-size: 22px; letter-spacing: .35em; color: #d8cfa8;
+       font-weight: bold; margin: 0 0 .4rem; }
+  header p { color: #666; font-size: 13px; margin: 0; }
+  main { display: flex; gap: 3rem; justify-content: center;
+         flex-wrap: wrap; }
+  figure { margin: 0 0 2rem; }
+  pre { font-family: "Courier New", Courier, monospace; font-weight: bold;
+        font-size: 13px; line-height: 1.2; }
+  figcaption { text-align: center; margin-top: .8rem; font-size: 13px;
+               color: #8f8fb8; }
+  figcaption b { color: #d8cfa8; letter-spacing: .15em; }
+  footer { text-align: center; color: #555; font-size: 12px;
+           margin-top: 2rem; }
+</style></head><body>
+<header><h1>ASCII TAROT</h1>
+<p>the Thoth deck in line-style ASCII · after jgs · 6 of 78</p></header>
+<main><figure><pre><span style="color:#8f8fb8">.=(+)==================[ 0 ]==================(+)=.</span>
 <span style="color:#8f8fb8">||                                               ||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#6a8fd4">::.           </span><span style="color:#c9a840">'              ·             '</span><span style="color:#6a8fd4">.::</span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#6a8fd4">:.      </span><span style="color:#c9a840">'              ·             '       </span><span style="color:#6a8fd4">.:</span><span style="color:#8f8fb8">||</span>
@@ -97,53 +60,7 @@
 <span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
 <span style="color:#8f8fb8">||                   </span><span style="color:#c8c8d8">THE FOOL                    </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||                </span><span style="color:#c8c8d8">~ aleph · air ~                </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <ol class="checklist">
-      <li class="t1"><b>Central horned figure</b> — pale, young, leaping mid-stride, head tilted back, both arms flung wide (Bacchus/Dionysus). The axis the card spins around.</li>
-      <li class="t1"><b>Prismatic rainbow vortex</b> — spiral of colored light coiling outward: warm core (yellow) → blue → red → violet. The spiral IS the card.</li>
-      <li class="t1"><b>Solar emblem at the groin</b> — small golden winged sun / solar disk. The "0 = All" made flesh.</li>
-      <li class="t1"><b>The dove ascending</b> — upper area near an open hand, rising. Holy Ghost / Venus.</li>
-      <li class="t2"><b>The tiger</b> — leaping at his lower right, teeth at his thigh. Fear/beast tearing at him, unheeded.</li>
-      <li class="t2"><b>The crocodile (Sebek)</b> — below, half in the Nile at his feet. The devourer-initiator.</li>
-      <li class="t2"><b>Grapes + coins</b> — vine/grape cluster (Bacchus fertility) and 2–3 coins carried loosely.</li>
-      <li class="t3"><b>The vulture (Maut)</b> — upper corner, the mother-goddess bird.</li>
-      <li class="t3"><b>The butterfly</b> — many-colored, fluttering (Greek psyche / soul).</li>
-      <li class="t3"><b>The caduceus / twin serpents</b> — coiling near the figure, union of opposites.</li>
-    </ol>
-  </div>
-</div>
-</section>
-
-<!-- ============ I THE MAGUS ============ -->
-<section class="card ph">
-<h2>I &middot; The Magus &nbsp;<span class="sig">beth &middot; mercury &middot; the messenger of the gods</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)==================[ I ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                   THE MAGUS                   ||
-||               ~ beth · mercury ~              ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Mercury, juggling weapons of the four suits. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ II THE PRIESTESS ============ -->
-<section class="card">
-<h2>II &middot; The Priestess &nbsp;<span class="sig">gimel &middot; moon &middot; the priestess of the silver star</span></h2>
-<div class="row">
-  <figure class="col-ref"><img src="reference/02-priestess-card.jpg" alt="Thoth II The Priestess (Harris)"><figcaption>Harris original</figcaption></figure>
-  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)=================[ II ]==================(+)=.</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre><figcaption><b>0 · THE FOOL</b><br>&#x5D0; · aleph · air</figcaption></figure><figure><pre><span style="color:#8f8fb8">.=(+)=================[ II ]==================(+)=.</span>
 <span style="color:#8f8fb8">||                                               ||</span>
 <span style="color:#8f8fb8">||                     </span><span style="color:#cfd85a">,-·-,                     </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||                    </span><span style="color:#cfd85a">)(o)(                      </span><span style="color:#8f8fb8">||</span>
@@ -152,21 +69,21 @@
 <span style="color:#8f8fb8">||   </span><span style="color:#cfe8f0">·        </span><span style="color:#f0ecd8">`--,_    )(       _,--´            </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#6a78b8">==             </span><span style="color:#f0ecd8">`-,_(xx)     _,-´           </span><span style="color:#cfe8f0">· </span><span style="color:#6a78b8">==</span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|                </span><span style="color:#f0ecd8">(x||x)                     </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||                  </span><span style="color:#f0ecd8">(x||x)</span><span style="color:#cfe8f0">\                     </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|               </span><span style="color:#cfe8f0">//</span><span style="color:#f0ecd8">)xx(</span><span style="color:#cfe8f0">|\\\               </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                  </span><span style="color:#f0ecd8">(x||x)</span><span style="color:#cfe8f0">\\                     </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|               </span><span style="color:#cfe8f0">//</span><span style="color:#f0ecd8">)xx(</span><span style="color:#cfe8f0">|\\\\\\               </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||            </span><span style="color:#cfe8f0">/ </span><span style="color:#e8ce7a">,cC=~~~~~~~~~~~=Cc, </span><span style="color:#cfe8f0">\            </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">·    /////   </span><span style="color:#e8ce7a">`--,_________,--´   </span><span style="color:#cfe8f0">\\\    ·</span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||   </span><span style="color:#cfe8f0">////      //</span><span style="color:#9fd8e8">x  </span><span style="color:#f0ecd8">/x\ </span><span style="color:#cfe8f0">| | </span><span style="color:#f0ecd8">/x\   </span><span style="color:#cfe8f0">\</span><span style="color:#9fd8e8">x     </span><span style="color:#cfe8f0">\\   </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||</span><span style="color:#cfe8f0">/</span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">/        //  / </span><span style="color:#f0ecd8">/xx\     /xx\ </span><span style="color:#cfe8f0">\  \        \</span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">\</span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||         </span><span style="color:#cfe8f0">//   /  </span><span style="color:#f0ecd8">|xx|     |xx|  </span><span style="color:#cfe8f0">\  </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">\         </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|    </span><span style="color:#cfe8f0">///   //  </span><span style="color:#f0ecd8">/xx| </span><span style="color:#cfe8f0">|   | </span><span style="color:#f0ecd8">|xx\  </span><span style="color:#cfe8f0">\   \\    </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||    </span><span style="color:#cfe8f0">//    //  / </span><span style="color:#f0ecd8">|xx|       |xx| </span><span style="color:#cfe8f0">\  \    \    </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">//    </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">/   /  </span><span style="color:#f0ecd8">|xx|       |xx|  </span><span style="color:#cfe8f0">\   \     \</span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||</span><span style="color:#cfe8f0">//     //   /  </span><span style="color:#f0ecd8">/xx| </span><span style="color:#cfe8f0">|     | </span><span style="color:#f0ecd8">|xx\  </span><span style="color:#cfe8f0">\  </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">\     \</span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|    </span><span style="color:#cfe8f0">/  </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">//   </span><span style="color:#f0ecd8">|xx|         |xx|   </span><span style="color:#cfe8f0">\   \    </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||    </span><span style="color:#cfe8f0">//   /     </span><span style="color:#f0ecd8">|xx|         |xx|     </span><span style="color:#cfe8f0">\</span><span style="color:#9fd8e8">x  </span><span style="color:#cfe8f0">\    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">·    /////   </span><span style="color:#e8ce7a">`--,_________,--´   </span><span style="color:#cfe8f0">\\\\\    ·</span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||   </span><span style="color:#cfe8f0">////      //</span><span style="color:#9fd8e8">x  </span><span style="color:#f0ecd8">/x\ </span><span style="color:#cfe8f0">| | </span><span style="color:#f0ecd8">/x\   </span><span style="color:#cfe8f0">\\</span><span style="color:#9fd8e8">x     </span><span style="color:#cfe8f0">\\\\   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#cfe8f0">/</span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">/        //  / </span><span style="color:#f0ecd8">/xx\     /xx\ </span><span style="color:#cfe8f0">\  \\        \</span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">\</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||         </span><span style="color:#cfe8f0">//   /  </span><span style="color:#f0ecd8">|xx|     |xx|  </span><span style="color:#cfe8f0">\  </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">\\         </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|    </span><span style="color:#cfe8f0">///   //  </span><span style="color:#f0ecd8">/xx| </span><span style="color:#cfe8f0">|   | </span><span style="color:#f0ecd8">|xx\  </span><span style="color:#cfe8f0">\\   \\\    </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||    </span><span style="color:#cfe8f0">//    //  / </span><span style="color:#f0ecd8">|xx|       |xx| </span><span style="color:#cfe8f0">\  \\    \\    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|</span><span style="color:#cfe8f0">//    </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">/   /  </span><span style="color:#f0ecd8">|xx|       |xx|  </span><span style="color:#cfe8f0">\   \     \\</span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#cfe8f0">//     //   /  </span><span style="color:#f0ecd8">/xx| </span><span style="color:#cfe8f0">|     | </span><span style="color:#f0ecd8">|xx\  </span><span style="color:#cfe8f0">\  </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">\\     \\</span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">|    </span><span style="color:#cfe8f0">/  </span><span style="color:#9fd8e8">x</span><span style="color:#cfe8f0">//   </span><span style="color:#f0ecd8">|xx|         |xx|   </span><span style="color:#cfe8f0">\\   \    </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||    </span><span style="color:#cfe8f0">//   /     </span><span style="color:#f0ecd8">|xx|         |xx|     </span><span style="color:#cfe8f0">\</span><span style="color:#9fd8e8">x  </span><span style="color:#cfe8f0">\\    </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">|| </span><span style="color:#6a78b8">| </span><span style="color:#cfe8f0">/    / </span><span style="color:#9fd8e8">x  </span><span style="color:#cfe8f0">/   </span><span style="color:#f0ecd8">(x´`x´`x) </span><span style="color:#cfe8f0">| </span><span style="color:#9fd8e8">x   </span><span style="color:#cfe8f0">\    \    \ </span><span style="color:#6a78b8">| </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#cfe8f0">//    /     /  </span><span style="color:#f0ecd8">(___,,___)  </span><span style="color:#cfe8f0">|    \     \    \ </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#cfe8f0">//    /     /  </span><span style="color:#f0ecd8">(___,,___)  </span><span style="color:#cfe8f0">|    \     \    \\ </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#cfe8f0">/     /     /     |         |     \     \     \</span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">|| </span><span style="color:#d8c8e8">,&lt;&gt;,                            </span><span style="color:#e0c04a">__,,~-´ </span><span style="color:#e09a9a">/\    </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#d8c8e8">/:&lt;&gt;:\ </span><span style="color:#b08a6a">,-(o)-,                 </span><span style="color:#e0c04a">,~´,~´´  </span><span style="color:#e09a9a">/::\   </span><span style="color:#8f8fb8">||</span>
@@ -181,32 +98,7 @@
 <span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
 <span style="color:#8f8fb8">||                 </span><span style="color:#c8c8d8">THE PRIESTESS                 </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||               </span><span style="color:#c8c8d8">~ gimel · moon ~                </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <ol class="checklist">
-      <li class="t1"><b>The veil of light</b> — she is clothed only in the luminous veil; a stretched crystalline net of straight rays filling the whole field. Seen THROUGH it; nothing organic sits behind it.</li>
-      <li class="t1"><b>Enthroned figure + upsweeping arms + crescent cup</b> — Isis the Eternal Virgin / Artemis; her arms sweep UP, pulling the webbing into the crescent bowl of a Moon-cup. Latticed body dissolves into the veil.</li>
-      <li class="t1"><b>Crown of Isis</b> — moon-phase crown (waxing / full / waning), 7 crescents beneath (Venus / Empress link), an infinity sign about her eyes (Kether).</li>
-      <li class="t1"><b>Bilateral symmetry</b> — mirrors on the vertical axis, "in exact balance in the middle pillar." Serenity IS the symmetry: "Change is stability."</li>
-      <li class="t2"><b>The lyre / bow / sistrum</b> — the scrolled horizontal instrument forming the Moon-cup; willpower / true will and the AUM sound. Harris = sistrum, Crowley = bow of Artemis, reads as a three-stringed lyre.</li>
-      <li class="t2"><b>The two pillars</b> — Mercy and Severity (RWS: Jachin &amp; Boaz), faint verticals flanking her, spread by the veil and half-lost in the webbing.</li>
-      <li class="t2"><b>The camel (Gimel)</b> — small and white, DEAD CENTER at the bottom between the two flowers, mirroring her seat between the pillars; carries the inner water across the desert.</li>
-      <li class="t2"><b>Crystalline foreground garden</b> — yellow 10-petal spiral shell right (force / Chokmah), concave flower left (receptive / Binah), grapes (Dionysus), pine cone (Bacchus), Plato's-solid crystals.</li>
-      <li class="t3"><b>Inverted crescent moon</b> on the throne base — the subconscious (also on the Moon card).</li>
-      <li class="t3"><b>Hidden Book of Mysteries</b> under the lyre — esoteric knowledge, the path through hidden Daath.</li>
-      <li class="t3"><b>Full moon disk</b> behind her head; star-points caught in the net's intersections.</li>
-    </ol>
-  </div>
-</div>
-</section>
-
-<!-- ============ III THE EMPRESS ============ -->
-<section class="card">
-<h2>III &middot; The Empress &nbsp;<span class="sig">daleth &middot; venus &middot; the daughter of the mighty ones</span></h2>
-<div class="row">
-  <figure class="col-ref"><img src="reference/03-empress-card.jpg" alt="Thoth III The Empress (Harris)"><figcaption>Harris original</figcaption></figure>
-  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)=================[ III ]=================(+)=.</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre><figcaption><b>II · THE PRIESTESS</b><br>&#x5D2; · gimel · moon</figcaption></figure><figure><pre><span style="color:#8f8fb8">.=(+)=================[ III ]=================(+)=.</span>
 <span style="color:#8f8fb8">||                                               ||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#4a78b8">(}                                          (}{</span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#4a78b8">){( </span><span style="color:#c8c8d8">,v&gt;                                     </span><span style="color:#4a78b8">){ </span><span style="color:#8f8fb8">||</span>
@@ -231,7 +123,7 @@
 <span style="color:#8f8fb8">||</span><span style="color:#4a78b8">({  </span><span style="color:#f0ece0">,--,             </span><span style="color:#69b868">);;;;;;;( </span><span style="color:#d8d060">,=======,     </span><span style="color:#4a78b8">})</span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#4a78b8">( </span><span style="color:#f0ece0">( ´o`,                       </span><span style="color:#d8d060">|´)\¡/(`|     </span><span style="color:#4a78b8">})</span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||    </span><span style="color:#f0ece0">`,  \_,,~´)                </span><span style="color:#f5f5ef">| &gt;(o)&lt; |       </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||     </span><span style="color:#f0ece0">`,\\,~´                 </span><span style="color:#f5f5ef">`,/¡{¡\,´       </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||     </span><span style="color:#f0ece0">`,\\\\,~´                 </span><span style="color:#f5f5ef">`,/¡{¡\,´       </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||   </span><span style="color:#f0ece0">,(´o´o´o`),                  </span><span style="color:#d8d060">\     /        </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||    </span><span style="color:#f0ece0">`--,,,--´                     </span><span style="color:#d8d060">`-,-´        </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||                   </span><span style="color:#f0e8e8">_,(o),_                     </span><span style="color:#8f8fb8">||</span>
@@ -244,36 +136,12 @@
 <span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
 <span style="color:#8f8fb8">||                  </span><span style="color:#c8c8d8">THE EMPRESS                  </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||              </span><span style="color:#c8c8d8">~ daleth · venus ~               </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <ol class="checklist">
-      <li class="t1"><b>Enthroned goddess + Salt-glyph arms + Mater Triumphans</b> — her arms trace the alchemical glyph of Salt: blue lotus lifted to her heart, the other arm curved low cradling a pregnant belly (Isis suckling Horus). Green skirt, red blouse.</li>
-      <li class="t1"><b>Crown of Isis + revolving moons</b> — moon-phase crown topped by the Maltese cross (4 elements balanced); a waxing moon she faces and a waning moon, both revolving (balance of opposites).</li>
-      <li class="t1"><b>Twisted throne + sparrow &amp; dove</b> — uprights of blue twisted flame / blades of grass (birth from water), her two sacred birds of Venus perched at their tops.</li>
-      <li class="t1"><b>Venus / the vegetal whole</b> — cool emerald + spring-green + sky-blue field of soft growth (not rays); golden zodiac girdle; Venus glyph hidden in the shield. Love unites Will (Chokmah) and Understanding (Binah).</li>
-      <li class="t2"><b>The lotus of Isis</b> — blue, held over the heart chakra (heart-path, not head); roots in water, petals open to the Sun as the belly of the Grail. 4 petals = Chesed.</li>
-      <li class="t2"><b>Pelican + White Eagle heraldry</b> — lower left: white pelican feeding its young from its own breast (Aeon of Osiris); lower right: shield with a white double-headed eagle holding the Moon (white tincture, New Aeon of Horus).</li>
-      <li class="t2"><b>Girdle of the Zodiac</b> — golden belt of the twelve signs = her universality across all creation.</li>
-      <li class="t3"><b>Floor tapestry + Secret Rose</b> — carpet of fleurs-de-lis (Binah / Trinity) and tiny fish adoring the white Secret Rose at the throne's base, over green-tinged waters.</li>
-      <li class="t3"><b>Robe details</b> — bees (vitality) and black/white dominos (Chokmah-Binah) wrapped in spiral rose-petal lines (love uniting duality).</li>
-      <li class="t3"><b>The Arch / Door of Daleth</b> behind her — the "Gate of Heaven"; antimony glyph (orb + cross) echoed at the crown.</li>
-    </ol>
-  </div>
-</div>
-</section>
-
-<!-- ============ IV THE EMPEROR ============ -->
-<section class="card">
-<h2>IV &middot; The Emperor &nbsp;<span class="sig">tzaddi &middot; aries &middot; sun of the morning, chief among the mighty</span></h2>
-<div class="row">
-  <figure class="col-ref"><img src="reference/04-emperor-card.jpg" alt="Thoth IV The Emperor (Harris)"><figcaption>Harris original</figcaption></figure>
-  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)=================[ IV ]==================(+)=.</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre><figcaption><b>III · THE EMPRESS</b><br>&#x5D3; · daleth · venus</figcaption></figure><figure><pre><span style="color:#8f8fb8">.=(+)=================[ IV ]==================(+)=.</span>
 <span style="color:#8f8fb8">||                                               ||</span>
-<span style="color:#8f8fb8">||                                           </span><span style="color:#f0f0e8">\  </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#ffc832">\  </span><span style="color:#e8d0c0">,,--,__                       __,--,</span><span style="color:#f0f0e8">\     </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">||</span><span style="color:#ffc832">-- </span><span style="color:#e8d0c0">((@),´ ,`,                    ,´, </span><span style="color:#f0f0e8">\</span><span style="color:#e8d0c0">((@))   </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">|| </span><span style="color:#ffc832">/  </span><span style="color:#e8d0c0">`´ )__ ) )                   </span><span style="color:#f0f0e8">\</span><span style="color:#e8d0c0">( __( `´    </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||                                           </span><span style="color:#f0f0e8">\\  </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#ffc832">\  </span><span style="color:#e8d0c0">,,--,__                       __,--,</span><span style="color:#f0f0e8">\\     </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">||</span><span style="color:#ffc832">-- </span><span style="color:#e8d0c0">((@),´ ,`,                    ,´, </span><span style="color:#f0f0e8">\\</span><span style="color:#e8d0c0">((@))   </span><span style="color:#8f8fb8">||</span>
+<span style="color:#8f8fb8">|| </span><span style="color:#ffc832">/  </span><span style="color:#e8d0c0">`´ )__ ) )                   </span><span style="color:#f0f0e8">\\</span><span style="color:#e8d0c0">( __( `´    </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||      </span><span style="color:#e8d0c0">`--´`´       </span><span style="color:#ffc832">\¡/\¡/   </span><span style="color:#e0c04a">,(@)   </span><span style="color:#e8d0c0">`´`--´      </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||</span><span style="color:#ffc832">/       \          </span><span style="color:#ffc832">[====]    </span><span style="color:#e0c04a">|                 </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||  </span><span style="color:#ffc832">/    \          </span><span style="color:#e8b890">,´·-,|     </span><span style="color:#e0c04a">|                 </span><span style="color:#8f8fb8">||</span>
@@ -306,295 +174,7 @@
 <span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
 <span style="color:#8f8fb8">||                  </span><span style="color:#c8c8d8">THE EMPEROR                  </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||              </span><span style="color:#c8c8d8">~ tzaddi · aries ~               </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <ol class="checklist">
-      <li class="t1"><b>Enthroned Emperor in the Sulphur posture</b> — crowned king in scarlet regalia, frontal; his body forms the alchemical glyph of Sulphur: head + arms an upright triangle, crossed legs the cross below. He faces toward the Empress.</li>
-      <li class="t1"><b>The ram throne</b> — the throne's arm-capitals are the heads of the Himalayan wild ram (Aries = a ram); a 16-point star disk (atomic number of sulphur; ChACh/Tzaddi = 16) on each throne arm.</li>
-      <li class="t1"><b>Dominant flame-red field + diagonal light</b> — scarlet / brilliant flame red fills the card (Mars in Aries, Sulphur the fiery element); a shaft of white light descends diagonally from the upper right.</li>
-      <li class="t1"><b>Sceptre + orb</b> — right hand bears a sceptre surmounted by a ram's head (raised into the light); left hand an orb topped with a Maltese cross at the navel (government established, creative rulership).</li>
-      <li class="t2"><b>Shield: red double-headed eagle + crimson disk</b> — the alchemical red tincture (Sun / gold), consort to the Empress's white eagle (Moon / silver); its left corner brighter than the darker right.</li>
-      <li class="t2"><b>Lamb and Flag, couchant at his feet</b> — the tamed ram (Agnus Dei), subservient, the Aeon of Osiris beneath the sovereign. "This is the theory of government."</li>
-      <li class="t2"><b>Four-point crown + Chesed</b> — gold crown of 4 points, jewels of 4 facets; a Sun disk behind his head (Sol exalted in Aries); his legs' Four echoes Chesed (paternal Jupiter).</li>
-      <li class="t3"><b>Bees + fleur-de-lys</b> on the robe — paternal power and rulership.</li>
-      <li class="t3"><b>Looping arrow-tipped lines</b> across the robe — directed energy driven to specific tasks; the Emperor wastes nothing.</li>
-      <li class="t3"><b>Tzaddi note</b> — letter Tzaddi ("fish hook") per Crowley's swap; qabalistically Netzach→Yesod, though Harris painted the light from the traditional Chokmah→Tiphareth direction.</li>
-    </ol>
-  </div>
-</div>
-</section>
-
-<!-- ============ V THE HIEROPHANT ============ -->
-<section class="card ph">
-<h2>V &middot; The Hierophant &nbsp;<span class="sig">vau &middot; taurus &middot; the reconciler</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)==================[ V ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                 THE HIEROPHANT                ||
-||                ~ vau · taurus ~               ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Taurus, bull, pentagram-child. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ VI THE LOVERS ============ -->
-<section class="card ph">
-<h2>VI &middot; The Lovers &nbsp;<span class="sig">zain &middot; gemini &middot; the children of the voice</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ VI ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                   THE LOVERS                  ||
-||               ~ zain · gemini ~               ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Gemini, alchemical marriage, orphic egg. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ VII THE CHARIOT ============ -->
-<section class="card ph">
-<h2>VII &middot; The Chariot &nbsp;<span class="sig">cheth &middot; cancer &middot; the bearer of the grail</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ VII ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                  THE CHARIOT                  ||
-||               ~ cheth · cancer ~              ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Cancer, four sphinxes, Holy Grail. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ VIII ADJUSTMENT ============ -->
-<section class="card ph">
-<h2>VIII &middot; Adjustment &nbsp;<span class="sig">lamed &middot; libra &middot; the daughter of the lords of truth</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)================[ VIII ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                   ADJUSTMENT                  ||
-||               ~ lamed · libra ~               ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Libra, masked woman on toes, sword &amp; scales. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ IX THE HERMIT ============ -->
-<section class="card ph">
-<h2>IX &middot; The Hermit &nbsp;<span class="sig">yod &middot; virgo &middot; the lamp of the hidden light</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ IX ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                   THE HERMIT                  ||
-||                ~ yod · virgo ~                ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Virgo, lamp/sun, wheat, Cerberus. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ X FORTUNE ============ -->
-<section class="card ph">
-<h2>X &middot; Fortune &nbsp;<span class="sig">kaph &middot; jupiter &middot; the turning wheel</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)==================[ X ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                    FORTUNE                    ||
-||               ~ kaph · jupiter ~              ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Jupiter, wheel with sphinx/Hermanubis/Typhon. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XI LUST ============ -->
-<section class="card ph">
-<h2>XI &middot; Lust &nbsp;<span class="sig">teth &middot; leo &middot; the strength of the lion</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XI ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                      LUST                     ||
-||                 ~ teth · leo ~                ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Leo, Babalon riding the Beast. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XII THE HANGED MAN ============ -->
-<section class="card ph">
-<h2>XII &middot; The Hanged Man &nbsp;<span class="sig">mem &middot; water &middot; the drowned god</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XII ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                 THE HANGED MAN                ||
-||                ~ mem · water ~                ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: water, ankh, serpent. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XIII DEATH ============ -->
-<section class="card ph">
-<h2>XIII &middot; Death &nbsp;<span class="sig">nun &middot; scorpio &middot; the transformer</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)================[ XIII ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                     DEATH                     ||
-||               ~ nun · scorpio ~               ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Scorpio, skeleton with scythe, fish/scorpion/eagle. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XIV ART ============ -->
-<section class="card ph">
-<h2>XIV &middot; Art &nbsp;<span class="sig">samekh &middot; sagittarius &middot; the alchemical marriage</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XIV ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                      ART                      ||
-||            ~ samekh · sagittarius ~           ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Sagittarius, alchemical fusion, cauldron. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XV THE DEVIL ============ -->
-<section class="card ph">
-<h2>XV &middot; The Devil &nbsp;<span class="sig">ayin &middot; capricorn &middot; the lord of the gates of matter</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XV ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                   THE DEVIL                   ||
-||              ~ ayin · capricorn ~             ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Capricorn, goat before world-tree. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XVI THE TOWER ============ -->
-<section class="card ph">
-<h2>XVI &middot; The Tower &nbsp;<span class="sig">peh &middot; mars &middot; the house of god</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XVI ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                   THE TOWER                   ||
-||                 ~ peh · mars ~                ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Mars, eye of Horus, dove &amp; serpent, falling figures. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XVII THE STAR ============ -->
-<section class="card">
-<h2>XVII &middot; The Star &nbsp;<span class="sig">hé &middot; aquarius &middot; the daughter of the firmament</span></h2>
-<div class="row">
-  <figure class="col-ref"><img src="reference/17-star-card.jpg" alt="Thoth XVII The Star (Harris)"><figcaption>Harris original</figcaption></figure>
-  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)================[ XVII ]=================(+)=.</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre><figcaption><b>IV · THE EMPEROR</b><br>&#x5E6; · tzaddi · aries</figcaption></figure><figure><pre><span style="color:#8f8fb8">.=(+)================[ XVII ]=================(+)=.</span>
 <span style="color:#8f8fb8">||                                               ||</span>
 <span style="color:#8f8fb8">||   </span><span style="color:#e8e4f8">,  \ ' /          </span><span style="color:#f0ecff">+        </span><span style="color:#7a6fc0">_,.--·--.,_      </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||  </span><span style="color:#e8e4f8">`.  \|/  ,´              </span><span style="color:#7a6fc0">,-´           `-.,_ </span><span style="color:#8f8fb8">||</span>
@@ -632,35 +212,7 @@
 <span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
 <span style="color:#8f8fb8">||                   </span><span style="color:#c8c8d8">THE STAR                    </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||              </span><span style="color:#c8c8d8">~ heh · aquarius ~               </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <ol class="checklist">
-      <li class="t1"><b>Nuith personified</b> — naked goddess kneeling (GD pose suggesting a whirling swastika).</li>
-      <li class="t1"><b>Golden cup held high</b>, pouring on her own head — eternal renewal, "milk of the stars"; cups fashioned as breasts.</li>
-      <li class="t1"><b>Silver cup in lowered left hand</b>, pouring on the land/water junction — Amrita, Nepenthe, blood of the Grail.</li>
-      <li class="t1"><b>Spiral vs. rectilinear energy</b> — every form spiral EXCEPT the silver cup's straight streams: the illusion of straightness that blinds humanity.</li>
-      <li class="t1"><b>The celestial globe</b> — "dominates the card"; the whole heavens (not Earth), pink/rose in the painting.</li>
-      <li class="t2"><b>Three seven-pointed Stars of Babalon/Venus</b> — largest upper-left spinning CCW, middle on the sphere, smallest star-seed tumbling from the gold cup.</li>
-      <li class="t2"><b>Land/water junction</b> — Sea of Binah meeting the fertile shore.</li>
-      <li class="t3"><b>Whirling clouds as her hair</b> — "my hair the trees of Eternity," hiding the Abyss.</li>
-      <li class="t3"><b>Three roses</b>, right corner — fertility, Venus, love.</li>
-      <li class="t3"><b>Star field</b> — "nothingness with twinkles... but what twinkles!"</li>
-      <li class="t3"><b>River / hills</b> — river flows at the bottom, hills on the distant shore.</li>
-      <li class="t4"><b>Five butterflies</b>, lower right — liberated souls past the Abyss (5 = spirit).</li>
-      <li class="t4"><b>Crystalline earth</b> — seven-sided translucent solids; the geometry of matter.</li>
-      <li class="t4"><b>Pyramid City</b> across the sea — home of enlightened souls (Babalon, Lady of the City of Pyramids).</li>
-    </ol>
-  </div>
-</div>
-</section>
-
-<!-- ============ XVIII THE MOON ============ -->
-<section class="card">
-<h2>XVIII &middot; The Moon &nbsp;<span class="sig">qoph &middot; pisces &middot; the gateway of resurrection</span></h2>
-<div class="row">
-  <figure class="col-ref"><img src="reference/18-moon-card.jpg" alt="Thoth XVIII The Moon (Harris)"><figcaption>Harris original</figcaption></figure>
-  <div class="col-ascii"><pre><span style="color:#8f8fb8">.=(+)================[ XVIII ]================(+)=.</span>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre><figcaption><b>XVII · THE STAR</b><br>&#x5D4; · heh · aquarius</figcaption></figure><figure><pre><span style="color:#8f8fb8">.=(+)================[ XVIII ]================(+)=.</span>
 <span style="color:#8f8fb8">||                                               ||</span>
 <span style="color:#8f8fb8">||                 </span><span style="color:#e8d8a0">_,,--‾‾--,,_                  </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||   </span><span style="color:#4a5288">,--,_      </span><span style="color:#e8d8a0">,-´          `-,         </span><span style="color:#4a5288">_,--,   </span><span style="color:#8f8fb8">||</span>
@@ -698,91 +250,7 @@
 <span style="color:#8f8fb8">|&gt;</span><span style="color:#c8c8d8">- - - - - - - - - - - - - - - - - - - - - - - -</span><span style="color:#8f8fb8">&lt;|</span>
 <span style="color:#8f8fb8">||                   </span><span style="color:#c8c8d8">THE MOON                    </span><span style="color:#8f8fb8">||</span>
 <span style="color:#8f8fb8">||               </span><span style="color:#c8c8d8">~ qoph · pisces ~               </span><span style="color:#8f8fb8">||</span>
-<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <ol class="checklist">
-      <li class="t1"><b>Bilateral symmetry</b> — the whole card mirrors on the vertical axis.</li>
-      <li class="t1"><b>The great moon orb, top center</b> — pale gold, waning, red serpentine swirl inside, flanked by the towers.</li>
-      <li class="t1"><b>The V-cone of tainted light</b> — pale stream widening from the moon, narrowing DOWN to a flame-point at bottom center; serum tinged with blood.</li>
-      <li class="t1"><b>Nine drops of impure blood, Yod-shaped</b> — exactly nine, falling inside the cone.</li>
-      <li class="t1"><b>Khephra the scarab bearing the solar disk</b> — bottom, under the water, in a gold-ringed aura; the sun carried through midnight (emotional heart of the card).</li>
-      <li class="t2"><b>Two black towers of nameless mystery</b> — on the hills, upper corners, hooded with tiny lit windows.</li>
-      <li class="t2"><b>Twin Anubis</b> — jackal-headed guardians between the Ways, tall staffs, Mercury symbol in hand.</li>
-      <li class="t2"><b>The jackals at their feet</b> — small black beasts on watch.</li>
-      <li class="t3"><b>Pool of blood-tinged water</b> — horizontal ripple lines.</li>
-      <li class="t3"><b>Red-and-blue bell-curve wave-mountains</b> — flanking the aura (Harris's signature waveforms).</li>
-      <li class="t3"><b>Starless indigo sky</b> — keep it empty; the darkness IS the atmosphere.</li>
-    </ol>
-  </div>
-</div>
-</section>
-
-<!-- ============ XIX THE SUN ============ -->
-<section class="card ph">
-<h2>XIX &middot; The Sun &nbsp;<span class="sig">resh &middot; sun &middot; the child of light</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XIX ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                    THE SUN                    ||
-||                 ~ resh · sun ~                ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Sun, twin children on green mound, zodiac wall. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XX THE AEON ============ -->
-<section class="card ph">
-<h2>XX &middot; The Aeon &nbsp;<span class="sig">shin &middot; fire &middot; the spirit of the primal fire</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XX ]==================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                    THE AEON                   ||
-||                ~ shin · fire ~                ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: fire, Nuit arch, Horus child. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ XXI THE UNIVERSE ============ -->
-<section class="card ph">
-<h2>XXI &middot; The Universe &nbsp;<span class="sig">tau &middot; saturn &middot; the great one of the night of time</span></h2>
-<div class="row">
-  <figure class="col-ref"><div class="ph-img">reference TBD</div><figcaption>Harris original &middot; TBD</figcaption></figure>
-  <div class="col-ascii"><pre>.=(+)=================[ XXI ]=================(+)=.
-||                                               ||
-||                                               ||
-||              · art in progress ·              ||
-||                                               ||
-||                                               ||
-|&gt;- - - - - - - - - - - - - - - - - - - - - - - -&lt;|
-||                  THE UNIVERSE                 ||
-||                ~ tau · saturn ~               ||
-`=(+)=========================================(+)=´</pre></div>
-  <div class="col-list">
-    <h3>Must-have elements</h3>
-    <p>Thoth: Saturn/earth, dancer with serpent in oval. Full element checklist TBD.</p>
-  </div>
-</div>
-</section>
-
-</body>
-</html>
+<span style="color:#8f8fb8">`=(+)=========================================(+)=´</span></pre><figcaption><b>XVIII · THE MOON</b><br>&#x5E7; · qoph · pisces</figcaption></figure></main>
+<footer>art: original, in the line style of Joan G. Stark (jgs) ·
+deck: Crowley/Harris Thoth · aw</footer>
+</body></html>

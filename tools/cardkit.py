@@ -1,0 +1,193 @@
+#!/usr/bin/env python3
+"""Shared card rendering kit: framed-txt + classes-json -> HTML spans / ANSI.
+
+Each card registers a config: files, default class, truecolor palette,
+optional 256/16 palettes (derived crudely from truecolor when absent).
+Usage:
+  python3 cardkit.py <card>        emit preview html + .ans files for card
+Cards register in CONFIGS below (star/fool/moon keep their legacy modules).
+"""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+DRAFTS = os.path.join(HERE, "..", "drafts")
+RESET = "\033[0m"
+
+
+def load_grid(txt_path, classes_path, default_cls):
+    with open(txt_path) as f:
+        lines = f.read().splitlines()
+    with open(classes_path) as f:
+        art = json.load(f)
+    nrows = len(lines)
+    grid = []
+    for r, line in enumerate(lines):
+        cls = [None] * len(line)
+        right = len(line) - 2
+        for c, ch in enumerate(line):
+            if r in (0, nrows - 1) or c <= 1 or c >= right:
+                cls[c] = "frame"
+            elif r >= nrows - 4:
+                cls[c] = "title"
+            elif 2 <= r < 2 + len(art) and 0 <= c - 2 < len(art[r - 2]):
+                cls[c] = art[r - 2][c - 2] or (default_cls if ch != " " else None)
+            elif ch != " ":
+                cls[c] = default_cls
+        grid.append(cls)
+    return lines, grid
+
+
+def esc(ch):
+    return ch.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def html_card(lines, grid, pal):
+    out = []
+    for line, cls in zip(lines, grid):
+        row, cur, buf = [], None, []
+        for c, ch in enumerate(line):
+            k = cls[c] if ch != " " else cur
+            if k != cur and buf:
+                row.append(f'<span style="color:{pal[cur]}">{"".join(buf)}</span>'
+                           if cur else "".join(buf))
+                buf = []
+            cur = k if ch != " " else cur
+            buf.append(esc(ch))
+        if buf:
+            row.append(f'<span style="color:{pal[cur]}">{"".join(buf)}</span>'
+                       if cur else "".join(buf))
+        out.append("".join(row))
+    return "\n".join(out)
+
+
+def ans_card(lines, grid, pal):
+    out = []
+    for line, cls in zip(lines, grid):
+        row, cur = [], None
+        for c, ch in enumerate(line):
+            if ch != " " and cls[c] != cur:
+                row.append(pal[cls[c]])
+                cur = cls[c]
+            row.append(ch)
+        row.append(RESET)
+        out.append("".join(row))
+    return "\n".join(out) + "\n"
+
+
+def hex_to_256(h):
+    r, g, b = (int(h[i:i + 2], 16) for i in (1, 3, 5))
+    if abs(r - g) < 12 and abs(g - b) < 12:
+        v = (r + g + b) // 3
+        idx = 232 + min(23, max(0, (v - 8) // 10))
+    else:
+        idx = (16 + 36 * round(r / 51) + 6 * round(g / 51) + round(b / 51))
+    return f"\033[38;5;{idx}m"
+
+
+def hex_to_16(h):
+    r, g, b = (int(h[i:i + 2], 16) for i in (1, 3, 5))
+    bright = max(r, g, b) > 170
+    base = (1 if r > g and r > b else
+            2 if g > r and g > b else
+            4 if b > r and b > g else
+            3 if r > 150 and g > 150 else 7)
+    if abs(r - g) < 25 and abs(g - b) < 25:
+        base = 7 if bright else 0 if max(r, g, b) < 90 else 7
+        return f"\033[{90 + base if bright else 30 + base}m" if base else "\033[90m"
+    if r > 150 and g > 150 and b < 120:
+        base = 3
+    return f"\033[{(90 if bright else 30) + base}m"
+
+
+def preview_page(title, img, card_html, heb):
+    return f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>{title}</title>
+<style>
+  body {{ background: #000; margin: 2rem; display: flex; flex-direction: row;
+         justify-content: center; align-items: flex-start; gap: 3rem;
+         flex-wrap: wrap; }}
+  figure {{ margin: 0; }}
+  img {{ max-height: 44rem; border-radius: 8px; }}
+  pre {{ font-family: "Courier New", Courier, monospace; font-weight: bold;
+        font-size: 15px; line-height: 1.2; }}
+  figcaption {{ color: #666; font-family: monospace; text-align: center;
+               margin-top: .8rem; }}
+</style></head><body>
+<figure><img src="../reference/{img}" alt="{title} (Harris)">
+<figcaption>Harris original (reference)</figcaption></figure>
+<figure><pre>{card_html}</pre>
+<figcaption>{heb} · ascii-tarot truecolor (after jgs)</figcaption></figure>
+</body></html>
+"""
+
+
+def emit(card, cfg):
+    lines, grid = load_grid(
+        os.path.join(DRAFTS, cfg["txt"]), os.path.join(DRAFTS, cfg["classes"]),
+        cfg["default"])
+    pal = cfg["true"]
+    html = html_card(lines, grid, pal)
+    out_html = os.path.join(DRAFTS, f"{card}-preview.html")
+    with open(out_html, "w") as f:
+        f.write(preview_page(cfg["title"], cfg["img"], html, cfg["heb"]))
+    pal256 = {k: hex_to_256(v) for k, v in pal.items()}
+    pal16 = {k: hex_to_16(v) for k, v in pal.items()}
+    for name, p in (("256", pal256), ("16", pal16)):
+        with open(os.path.join(DRAFTS, f"{card}-lg-{name}.ans"), "w") as f:
+            f.write(ans_card(lines, grid, p))
+    print(f"emitted {card}: preview + 16/256 ans")
+
+
+CONFIGS = {
+    "02-priestess": {
+        "txt": "02-priestess-lg-v1.txt", "classes": "02-priestess-lg-classes.json",
+        "img": "02-priestess-card.jpg", "title": "II . The Priestess",
+        "heb": "&#x5D2;", "default": "veil",
+        "true": {
+            "frame": "#8f8fb8", "title": "#c8c8d8",
+            "veil": "#cfe8f0", "lattice": "#9fd8e8", "field": "#3a5aa8",
+            "figure": "#f0ecd8", "crown": "#cfd85a", "wings": "#8fd8c8",
+            "cup": "#e8ce7a", "pillar": "#6a78b8", "camel": "#f5f5f5",
+            "crystal": "#d8c8e8", "flower": "#b08a6a", "cone": "#6a9950",
+            "grapes": "#8a5fb8", "shell": "#e0c04a", "pyramid": "#e09a9a",
+            "sig": "#55558a",
+        },
+    },
+    "03-empress": {
+        "txt": "03-empress-lg-v1.txt", "classes": "03-empress-lg-classes.json",
+        "img": "03-empress-card.jpg", "title": "III . The Empress",
+        "heb": "&#x5D3;", "default": "field",
+        "true": {
+            "frame": "#8f8fb8", "title": "#c8c8d8",
+            "field": "#69a860", "arch": "#5a88c8", "reeds": "#4a78b8",
+            "crown": "#5a9950", "cross": "#e0c04a", "face": "#e8cdb0",
+            "hair": "#e8e0d0", "blouse": "#d86a6a", "lotus": "#5a78d8",
+            "stems": "#69a860", "skirt": "#69b868", "belt": "#e0c04a",
+            "moon": "#b8b8c8", "throne": "#5a88c8", "pelican": "#f0ece0",
+            "shield": "#d8d060", "eagle": "#f5f5ef", "rose": "#f0e8e8",
+            "floor": "#4a9a98", "fleur": "#8fb8d8", "bird": "#c8c8d8",
+            "sig": "#55558a",
+        },
+    },
+    "04-emperor": {
+        "txt": "04-emperor-lg-v1.txt", "classes": "04-emperor-lg-classes.json",
+        "img": "04-emperor-card.jpg", "title": "IV . The Emperor",
+        "heb": "&#x5E6;", "default": "field",
+        "true": {
+            "frame": "#8f8fb8", "title": "#c8c8d8",
+            "field": "#c23a2a", "flames": "#e05a3a", "sunrays": "#ffc832",
+            "cross": "#ffd700",
+            "ram": "#e8d0c0", "crown": "#ffc832", "face": "#e8b890",
+            "robe": "#c8452a", "pattern": "#e8a04a", "sceptre": "#e0c04a",
+            "light": "#f0f0e8", "orb": "#a82a3a", "star": "#ffd700",
+            "skin": "#e8b890", "shield": "#e8d44a", "eagle": "#c85a2a",
+            "lamb": "#f0ecd8", "floor": "#8a2a30", "fleur": "#e0a84a",
+            "sig": "#55558a",
+        },
+    },
+}
+
+if __name__ == "__main__":
+    import sys
+    card = sys.argv[1]
+    emit(card, CONFIGS[card])
