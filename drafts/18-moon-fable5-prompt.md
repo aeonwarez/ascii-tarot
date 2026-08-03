@@ -1,4 +1,4 @@
-# Fable Prompt — Atu XVIII, The Moon (Thoth)
+# Fable Prompt - Atu XVIII, The Moon (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -15,10 +15,10 @@ Color mapped to the Harris painting. Sign `aw` or unsigned, never `jgs`. Output 
 ## Reasoning tier
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
-placement drift or flatness — for those, use the render & review loop.
+placement drift or flatness - for those, use the render & review loop.
 
 ## Subject
-**Atu XVIII — The Moon.** Hebrew letter Qoph ("back of the head"), element/sign Pisces
+**Atu XVIII - The Moon.** Hebrew letter Qoph ("back of the head"), element/sign Pisces
 (water). The card is MIDNIGHT: the Gateway of Resurrection, the Dark Night of the Soul,
 illusion, poisoned darkness that is the condition of the rebirth of light. The sun
 carried through the underworld. Corruption before dawn.
@@ -99,13 +99,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Architectural-symmetry dominant** — towers, mountains and path framed as a strict
+- **A. Architectural-symmetry dominant** - towers, mountains and path framed as a strict
   mirror.
-- **B. Path-recession dominant** — depth first; the receding central road is the hero
+- **B. Path-recession dominant** - depth first; the receding central road is the hero
   read, converging to the gap.
-- **C. Atmosphere dominant** — the dark field, the nine drops and the single warm
+- **C. Atmosphere dominant** - the dark field, the nine drops and the single warm
   scarab-sun as the emotional focus.
-Tier: **middle path** — naturally ASCII-friendly (mirror symmetry + perspective); run one
+Tier: **middle path** - naturally ASCII-friendly (mirror symmetry + perspective); run one
 composer + the render loop + one adversarial critique, escalate only if it reads flat.
 
 ## Title band

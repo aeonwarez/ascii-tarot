@@ -1,4 +1,4 @@
-# Fable Prompt — Atu 0, The Fool (Thoth)
+# Fable Prompt - Atu 0, The Fool (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -16,22 +16,23 @@ never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
 ## Reasoning tier
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
-placement drift or a muddy color spiral — for those, use the render & review loop.
+placement drift or a muddy color spiral - for those, use the render & review loop.
 
 ## Subject
-**Atu 0 — The Fool.** Hebrew letter Aleph, element Air. The Bornless Spirit, the Zero
+**Atu 0 - The Fool.** Hebrew letter Aleph, element Air. The Bornless Spirit, the Zero
 that contains all: Bacchus/Dionysus, the Green Man of spring, the Holy Ghost, divine
 madness. Not mundane foolishness. The origin from which every other trump issues. The
-most prismatic, most crowded card in the deck: a whirlwind of light and creatures.
+most crowded card in the deck: a whirlwind of light and creatures.
 
 ## The composition, in one sentence
-A horned, pale figure leaps at the center with arms flung wide, wrapped in a spiraling
-rainbow vortex of prismatic light; a dove rises above, a tiger bites at his leg, a
+A horned, pale figure leaps at the center with arms flung wide, wrapped in a great
+spiraling silver-white vortex (Crowley's "rainbow-hued spirals" as Harris actually
+painted them, faint iridescence only); a dove rises above, a tiger bites at his leg, a
 crocodile waits in the water below.
 
-Hold two things above all: the leaping central figure, and the spiral rainbow vortex.
-Unlike other cards, COLOR is the hero here. The `.ans` pass carries this card. If the
-color spiral works, the card works.
+Hold two things above all: the leaping central figure, and the luminous silver spiral
+vortex. Unlike other cards, LIGHT is the hero here. The `.ans` pass carries this card.
+If the silver spiral works, the card works.
 
 ---
 
@@ -44,10 +45,12 @@ color spiral works, the card works.
    ecstatic, never static or frontal. Use diagonal strokes for the leap. He is the
    axis the whole card spins around.
 
-2. **The prismatic rainbow vortex.** The entire field is a spiral of colored light
-   coiling outward from the figure, not dead black background. Band the color: warm
-   core (yellow) → blue → red → violet moving outward. This is both the composition and
-   the negative-space fill. The spiral IS the card.
+2. **The luminous silver-white vortex.** The entire field is a spiral of pale
+   silver-white light coiling outward from the figure, not dead black background.
+   Crowley called these "rainbow-hued spirals" but Harris painted them silver-white with
+   only faint iridescent edges and a warm gold cast near the flame and boots. Render a
+   luminous banded whorl, not a saturated rainbow. This is both the composition and the
+   negative-space fill. The spiral IS the card.
 
 3. **The solar emblem at the groin.** A small golden winged sun / solar disk at the
    figure's generative center. Iconic, tiny, do not omit. The "0 = All" made flesh.
@@ -77,16 +80,17 @@ color spiral works, the card works.
 ## Density warning (specific to this card)
 The Fool is the deck's densest scene, DuQuette calls it a whirlwind. At 47×32 you
 CANNOT draw all ten elements and stay legible. Priority order is literal: nail 1-4
-(figure + color vortex + sun + dove), add 5-7 as clear small creatures, render 8-10 as
-tiny marks or drop them. Do not clutter the color spiral into mud. Empty, well-lit
+(figure + silver vortex + sun + dove), add 5-7 as clear small creatures, render 8-10 as
+tiny marks or drop them. Do not clutter the silver spiral into mud. Empty, well-lit
 spiral beats a crammed one.
 
 ## Render & review
 Do not judge placement or the color spiral by reading the source. Run the chain and
 LOOK: `compose_00-fool_lg.py` → `frame.py` → `cardkit.py 00-fool` → `render_png.py
 00-fool --axis`, then OPEN the PNG and critique against the Harris scan: does the figure
-center on the axis guide? does the rainbow vortex read as a clean banded spiral (warm
-core → blue → red → violet) rather than mud? are the creatures (tiger, croc, dove) clear
+center on the axis guide? does the silver vortex read as a clean luminous banded spiral
+(pale silver-white with faint iridescence, warm gold near the flame) rather than mud?
+are the creatures (tiger, croc, dove) clear
 small marks, not clutter? Fix the compositor and repeat. Ship at ~80% once the render
 holds (2-3 passes max). See FABLE_TEMPLATE.md "Render & review loop."
 
@@ -95,13 +99,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Figure-dominant** — the leaping horned figure large and central, a tight vortex
+- **A. Figure-dominant** - the leaping horned figure large and central, a tight vortex
   hugging him.
-- **B. Vortex-dominant** — the rainbow spiral fills the whole field; the figure smaller,
-  dissolving into the color.
-- **C. Mandala-balanced** — figure centered on the axis with the creatures (tiger, croc,
+- **B. Vortex-dominant** - the silver spiral fills the whole field; the figure smaller,
+  dissolving into the light.
+- **C. Mandala-balanced** - figure centered on the axis with the creatures (tiger, croc,
   dove) ringed in orbit around him.
-Tier: **full panel** — hero card, the deck's densest scene; composition is genuinely
+Tier: **full panel** - hero card, the deck's densest scene; composition is genuinely
 contested, so spend the full cost here.
 
 ## Title band
@@ -109,6 +113,6 @@ Via `tools/frame.py -s majors -n 0`:
 top plaque `[ 0 ]` in the rule; bottom band `THE FOOL` / `~ aleph · air ~`
 
 ## The one-line brief
-A horned figure leaps, arms wide, at the heart of a spiraling rainbow vortex; dove
-above, tiger at his leg, crocodile below. The color spiral is the whole card, get that
-and everything else is detail.
+A horned figure leaps, arms wide, at the heart of a spiraling silver-white vortex; dove
+above, tiger at his leg, crocodile below. The luminous spiral is the whole card, get
+that and everything else is detail.

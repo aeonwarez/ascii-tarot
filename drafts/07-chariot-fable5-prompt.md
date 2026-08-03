@@ -1,4 +1,4 @@
-# Fable Prompt — Atu VII, The Chariot (Thoth)
+# Fable Prompt - Atu VII, The Chariot (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -18,13 +18,13 @@ Harris painting. Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.a
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis (the amethyst Grail as full-moon/Great-Sea of
 Binah, the four counterchanged Kerubic sphinxes, the ABRAHADABRA canopy, the ten Stars of
-Assiah) and clean compositor structure. It does NOT fix placement drift — for that, use the
+Assiah) and clean compositor structure. It does NOT fix placement drift - for that, use the
 render & review loop.
 
 ## Subject
-**Atu VII — The Chariot.** Hebrew letter Cheth ("fence" / enclosure; Cheth = 418 =
+**Atu VII - The Chariot.** Hebrew letter Cheth ("fence" / enclosure; Cheth = 418 =
 ABRAHADABRA), the sign Cancer (Luna rules, Jupiter exalted). Path 18, "The House of
-Influence," Binah → Geburah — the Supernals descending through the Veil of Water upon man,
+Influence," Binah → Geburah - the Supernals descending through the Veil of Water upon man,
 the path crossing the Abyss. A holy armoured King throned in a chariot drawn by four
 sphinxes, bearing the Holy Grail beneath a starry canopy; his one function is to bear the
 Grail (the Two-in-One elixir). "The Issue of the Vulture, Two-in-One, conveyed; this is the
@@ -34,11 +34,11 @@ Chariot of Power. TRINC."
 An armoured King in amber sits frontal and central under a starry blue canopy, his lowered
 visor hiding his face and a crab crest on his helmet, holding a glowing amethyst Holy Grail
 at his center, four pillars rising to the canopy, two scarlet wheels to his sides, and four
-counterchanged sphinxes drawing the whole beneath him — a stationary, perfectly balanced
+counterchanged sphinxes drawing the whole beneath him - a stationary, perfectly balanced
 throne-on-wheels, not a racing car.
 
 Hold two things above all: the GLOWING CENTRAL GRAIL borne in his hands (the card's heart)
-and the FRONTAL, ARMOURED, SYMMETRIC STILLNESS — he is throned, not driving; the chariot is
+and the FRONTAL, ARMOURED, SYMMETRIC STILLNESS - he is throned, not driving; the chariot is
 balanced, self-contained, at rest in motion.
 
 ---
@@ -50,24 +50,24 @@ balanced, self-contained, at rest in motion.
 1. **The armoured Charioteer, throned frontal on col 23.** A King in full AMBER armour, no
    flesh exposed, VIZOR lowered ("no man may look upon his face and live"), in a meditative
    posture, throned and holding no reins. Draw him ON TOP; his spine and helmet sit on
-   column 23 — mirror the car about the axis, do not let the mass drift left.
+   column 23 - mirror the car about the axis, do not let the mass drift left.
 
 2. **The Holy Grail, glowing, at his center.** In his hands, centered, a pure AMETHYST cup
    shaped like the full moon / the Great Sea of Binah, with RADIANT BLOOD at its heart whose
-   rays revolve. This is the card's single most important read — keep it central and lit.
+   rays revolve. This is the card's single most important read - keep it central and lit.
 
 3. **The four sphinxes drawing the chariot.** Below and in front, FOUR sphinxes of the four
-   Kerubs (Bull, Lion, Eagle, Man), elements counterchanged — TWO dark and TWO light.
+   Kerubs (Bull, Lion, Eagle, Man), elements counterchanged - TWO dark and TWO light.
    Mirror them in pairs about the axis; keep them small and low.
 
 4. **The starry blue canopy with ABRAHADABRA.** A night-sky-BLUE canopy of Binah, starry,
-   spanning the top, the word ABRAHADABRA lettered across it (as ABRACADABRA — the Harris
+   spanning the top, the word ABRAHADABRA lettered across it (as ABRACADABRA - the Harris
    typo). The lid of the shrine-on-wheels, centered and symmetric.
 
 **Makes it Thoth (5-7):**
 
 5. **The four pillars.** Four pillars (the regimen of Tetragrammaton) rising from the car to
-   hold the canopy — mirror two per side about the axis.
+   hold the canopy - mirror two per side about the axis.
 
 6. **The scarlet wheels.** Two SCARLET wheels (Geburah / Mars, the revolving energy), one to
    each side of the car, mirrored. Draw as 2:1 wide ellipses (1:2 cells).
@@ -85,7 +85,7 @@ balanced, self-contained, at rest in motion.
 
 ## Design note (specific to this card)
 Sibling/foil to the Priestess (II) and the Hierophant (V): Cancer is the house of the Moon,
-so this shares the Priestess's lunar water, but rendered as ARMOUR and WEIGHT — a sealed,
+so this shares the Priestess's lunar water, but rendered as ARMOUR and WEIGHT - a sealed,
 frontal, symmetric shrine. The trap is drawing a dynamic racing chariot; it is the opposite,
 a throned figure at perfect rest, "because the whole system of progression is perfectly
 balanced." Build the read around the glowing central Grail: if a viewer sees an armoured
@@ -114,13 +114,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 parallel (each running the Render & review loop above to a finished candidate), three judges
 scoring each against the Harris scan + axis guide, then synthesis / polish / integration
 merging the strongest read. Three strategies to seed the composers:
-- **A. Grail dominant** — the glowing amethyst cup at the center as the hero read, the
+- **A. Grail dominant** - the glowing amethyst cup at the center as the hero read, the
   Charioteer a dark armoured frame around it.
-- **B. Enthroned-figure dominant** — the amber armoured King, visor and crab crest foremost,
+- **B. Enthroned-figure dominant** - the amber armoured King, visor and crab crest foremost,
   the Grail read at his hands.
-- **C. Vehicle-symmetry dominant** — the starry canopy, four pillars, scarlet wheels and
+- **C. Vehicle-symmetry dominant** - the starry canopy, four pillars, scarlet wheels and
   four sphinxes as a symmetric shrine-on-wheels around a smaller seated figure.
-Tier: **full panel** — a symmetric, many-element vehicle with a contested hero (figure vs.
+Tier: **full panel** - a symmetric, many-element vehicle with a contested hero (figure vs.
 Grail); spend the full cost.
 
 ## Title band
@@ -131,5 +131,5 @@ top plaque `[ VII ]` in the rule; bottom band `THE CHARIOT` / `~ cheth · cancer
 An armoured King in amber throned frontal under a starry blue ABRAHADABRA canopy, visor down
 and crab-crested, cradling a glowing amethyst Holy Grail at his center, four pillars to the
 canopy, two scarlet wheels at his sides, four counterchanged Kerubic sphinxes drawing the
-whole beneath him. A perfectly balanced shrine-on-wheels at rest in motion — victory borne,
+whole beneath him. A perfectly balanced shrine-on-wheels at rest in motion - victory borne,
 not driven.

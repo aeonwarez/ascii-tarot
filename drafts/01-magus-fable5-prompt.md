@@ -1,4 +1,4 @@
-# Fable Prompt — Atu I, The Magus (Thoth)
+# Fable Prompt - Atu I, The Magus (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -16,12 +16,12 @@ one `.txt` + one `.ans` (256 + 16 fallback).
 ## Reasoning tier
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows most in the esoteric SYNTHESIS (Mercury glyph, the eight objects, the
-Kether/Binah light) and clean compositor structure. It does NOT fix placement drift —
+Kether/Binah light) and clean compositor structure. It does NOT fix placement drift -
 for that, use the render & review loop.
 
 ## Subject
-**Atu I — The Magus.** Hebrew letter Beth ("house"), the planet Mercury. Path 12,
-"The Intelligence of Transparency," Kether → Binah — the CLEAR CHANNEL. Hermes
+**Atu I - The Magus.** Hebrew letter Beth ("house"), the planet Mercury. Path 12,
+"The Intelligence of Transparency," Kether → Binah - the CLEAR CHANNEL. Hermes
 Trismegistus (Mercury the messenger, Thoth the scribe, Hermes the alchemist); the
 Word / Will / Logos by whom the worlds were created; the male correlative of the High
 Priestess; the adult form of the Fool. The alchemical principle MERCURY (the first of
@@ -51,7 +51,7 @@ orbiting him. This is the motion-card opposite of the Priestess's stillness.
    motion, attitude like a swastika / thunderbolt. His body reads as the alchemical
    MERCURY glyph: two serpents at his head make the horns, the wide stylized wings at
    his feet make the arrowhead-cross. Winged helmet, winged heels. Draw him ON TOP.
-   His VISUAL center (and the caduceus rod) sits on column 23 — mirror the symmetric
+   His VISUAL center (and the caduceus rod) sits on column 23 - mirror the symmetric
    parts about `AXIS = 23.0`; the classic tell of the bug is a centered head over a
    body that leans a few columns left.
 
@@ -76,7 +76,7 @@ orbiting him. This is the motion-card opposite of the Priestess's stillness.
 **Makes it Thoth (5-7):**
 
 5. **The lemniscate of serpents.** Two serpents twined as an INFINITY sign above
-   his head, stretching down through his feet — his infinite Kether source
+   his head, stretching down through his feet - his infinite Kether source
    channelled into Binah. Left serpent wears the throne-headdress of Isis
    (Binah); right serpent a plain crown (Kether).
 
@@ -84,21 +84,21 @@ orbiting him. This is the motion-card opposite of the Priestess's stillness.
    sandal-strap a small serpent shedding its skin (life anew).
 
 7. **The Ape of Thoth (Cynocephalus).** A monkey groping upward from the LOWER
-   RIGHT corner by his right foot — the distortion of truth inherent in speech
+   RIGHT corner by his right foot - the distortion of truth inherent in speech
    and form. "Manifestation implies illusion."
 
 **Soul + garnish (8-10, tiny marks or drop if crowded):**
 
 8. A faint golden SUNBURST behind the left foot-wing (Mercury, herald of the Sun).
 9. The caduceus outlined in yellow (Vau of Tetragrammaton).
-10. The ambiguous two-way face (reads up-left or down-right by focus) — his dual
+10. The ambiguous two-way face (reads up-left or down-right by focus) - his dual
     trickster nature; only if it doesn't muddy the figure.
 
 ---
 
 ## Design note (specific to this card)
 Sibling to the Fool (0) and correlative of the Priestess (II): where the Priestess is
-serene bilateral STILLNESS behind a veil of light, the Magus is pure MOTION — objects
+serene bilateral STILLNESS behind a veil of light, the Magus is pure MOTION - objects
 flung into orbit, a spinning swastika/thunderbolt body, the caduceus thrusting through
 the whole card. Build that energy: diagonal thrust, airborne clutter held in balance,
 nothing at rest. The single most important read is the Mercury glyph (serpent-horns +
@@ -128,13 +128,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Mercury-glyph figure dominant** — the swastika-motion body (serpent-horns +
+- **A. Mercury-glyph figure dominant** - the swastika-motion body (serpent-horns +
   foot-wings) is the hero, the eight objects tight around him.
-- **B. Caduceus-spine dominant** — the full-height caduceus is the hero, figure overlaid
+- **B. Caduceus-spine dominant** - the full-height caduceus is the hero, figure overlaid
   on it, dove descending in the circle emphasized.
-- **C. Juggling-orbit dominant** — the eight objects flung wide in a balanced ring, the
+- **C. Juggling-orbit dominant** - the eight objects flung wide in a balanced ring, the
   figure smaller at the centered hub.
-Tier: **full panel** — asymmetric swastika motion plus eight objects makes this the
+Tier: **full panel** - asymmetric swastika motion plus eight objects makes this the
 highest axis / composition risk of the set; spend the full cost.
 
 ## Title band

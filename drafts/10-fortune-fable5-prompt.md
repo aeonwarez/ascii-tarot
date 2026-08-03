@@ -1,9 +1,9 @@
-# Fable Prompt — Atu X, Fortune (Thoth)
+# Fable Prompt - Atu X, Fortune (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
 leading whitespace preserved. **Center on the axis (col 23):** this card is RADIAL, not
-bilateral — the WHEEL HUB, the crowning Sphinx and its upright sword all sit on column 23;
+bilateral - the WHEEL HUB, the crowning Sphinx and its upright sword all sit on column 23;
 mirror the ascending Hermanubis (left) against the descending Typhon (right), and balance the
 starry firmament and plumes about `AXIS = 23.0` with `PM`/`PMB`, verifying with `--axis`.
 The classic bug tell is a centered Sphinx over a hub/wheel that leans a few columns left.
@@ -20,13 +20,13 @@ Author at the highest tier (x-high / best). Low-volume, high-craft work; the mar
 quality shows in the esoteric synthesis (the ten-spoked wheel = the ten Sephiroth, the three
 gunas as Sulphur/Mercury/Salt riders, the motionless axle in the triangle, the distorted
 stars of Nuit issuing lightnings) and clean compositor structure. It does NOT fix placement
-drift — for that, use the render & review loop.
+drift - for that, use the render & review loop.
 
 ## Subject
-**Atu X — Fortune** (old decks: The Wheel of Fortune). Hebrew letter Kaph ("palm / closed
-hand" — the hand that turns the wheel; the palm that carries the soul's path). The planet
+**Atu X - Fortune** (old decks: The Wheel of Fortune). Hebrew letter Kaph ("palm / closed
+hand" - the hand that turns the wheel; the palm that carries the soul's path). The planet
 Jupiter ("the Greater Fortune"). Path 21, "The Intelligence of Conciliation," Chesed →
-Netzach — the mechanism of the universe, the endless turning of Karma. "Follow thy Fortune,
+Netzach - the mechanism of the universe, the endless turning of Karma. "Follow thy Fortune,
 careless where it lead thee! The axle moveth not: attain thou that."
 
 ## The composition, in one sentence
@@ -37,7 +37,7 @@ firmament of distorted five-pointed stars issuing lightnings, a great apex-up tr
 the wheel with the motionless axle at its center.
 
 Hold two things above all: the SPINNING TEN-SPOKED WHEEL centered on its motionless hub (the
-card's whole structure) and the THREE RIDERS read as three distinct tinctures — bright
+card's whole structure) and the THREE RIDERS read as three distinct tinctures - bright
 Sphinx atop, blue Hermanubis rising, red Typhon falling.
 
 ---
@@ -57,7 +57,7 @@ Sphinx atop, blue Hermanubis rising, red Typhon falling.
 
 3. **Hermanubis ascending (left) + Typhon descending (right).** On the LEFT a blue
    MERCURY-ape / Hermanubis CLIMBING; on the RIGHT the red-SALT crocodile-headed TYPHON
-   (inverted Ankh) DESCENDING. Mirror the pair about the axis — one rising, one falling.
+   (inverted Ankh) DESCENDING. Mirror the pair about the axis - one rising, one falling.
 
 4. **The firmament of distorted stars + churning plumes.** Above, a FIRMAMENT of distorted
    five-pointed STARS (Nuit, the cosmic clock) issuing LIGHTNINGS; the whole set in a
@@ -89,7 +89,7 @@ Sphinx atop, blue Hermanubis rising, red Typhon falling.
 ## Design note (specific to this card)
 Foil to the Wheel's stillness is its motion: the whole point is a spinning mechanism with a
 motionless center, so build it RADIALLY about the hub on col 23 rather than as a bilateral
-shrine — but still verify the hub and the crowning Sphinx sit dead on the axis, and mirror
+shrine - but still verify the hub and the crowning Sphinx sit dead on the axis, and mirror
 the two side-riders (one up, one down) so the wheel doesn't tilt. The trap is a lopsided
 wheel or an egg-shaped rim; force the rim to a 2:1 ellipse and keep the spokes even. Make the
 three riders read as three tinctures by value (bright Sphinx, blue ape, red crocodile) so the
@@ -115,13 +115,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 parallel (each running the Render & review loop above to a finished candidate), three judges
 scoring each against the Harris scan + axis guide, then synthesis / polish / integration
 merging the strongest read. Three strategies to seed the composers:
-- **A. Wheel dominant** — the great ten-spoked wheel and its motionless hub/triangle as the
+- **A. Wheel dominant** - the great ten-spoked wheel and its motionless hub/triangle as the
   hero structure, the three riders reading as attributes on the rim.
-- **B. Riders dominant** — the three gunas (Sphinx / Hermanubis / Typhon) as the hero read,
+- **B. Riders dominant** - the three gunas (Sphinx / Hermanubis / Typhon) as the hero read,
   the wheel a frame that carries them up and down.
-- **C. Cosmos dominant** — the starry firmament of Nuit, the lightnings and blue-violet
+- **C. Cosmos dominant** - the starry firmament of Nuit, the lightnings and blue-violet
   plumes as the hero read (the cosmic clock), the wheel and riders the mechanism within it.
-Tier: **full panel** — a radial, many-element card whose wheel must read round and whose
+Tier: **full panel** - a radial, many-element card whose wheel must read round and whose
 three riders must separate cleanly; spend the full cost.
 
 ## Title band

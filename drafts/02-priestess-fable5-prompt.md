@@ -1,4 +1,4 @@
-# Fable Prompt — Atu II, The Priestess (Thoth)
+# Fable Prompt - Atu II, The Priestess (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -15,10 +15,10 @@ never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
 ## Reasoning tier
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
-placement drift or veil flatness — for those, use the render & review loop.
+placement drift or veil flatness - for those, use the render & review loop.
 
 ## Subject
-**Atu II — The Priestess.** Hebrew letter Gimel ("camel"), attribution the Moon in
+**Atu II - The Priestess.** Hebrew letter Gimel ("camel"), attribution the Moon in
 her highest, purest form. Path 13 "Unifying Intelligence," the sole road down the
 MIDDLE PILLAR, Kether → Tiphereth, the one path through hidden Daath, the bridge
 across the Abyss. She is Isis the Eternal Virgin, Artemis/Diana: light itself, the
@@ -58,28 +58,28 @@ the crescent cup at her arms. The light-web IS the card.
    still axis; draw her ON TOP, break the rays behind her.
 
 3. **The Crown of Isis.** Moon-phase crown (waxing-full-waning) at her head, pale with
-   a warm gold-green glow; small crescents beneath. Iconic, do not omit — it names her
+   a warm gold-green glow; small crescents beneath. Iconic, do not omit - it names her
    the Moon.
 
-4. **Bilateral symmetry.** The whole card mirrors down the vertical axis — throne,
+4. **Bilateral symmetry.** The whole card mirrors down the vertical axis - throne,
    veil, arms, the two flowers, the falling forms. Serenity comes from the symmetry;
    any asymmetry reads as noise. Keep her perfectly centered.
 
 **Makes it Thoth (5-7):**
 
 5. **The lyre / bow / sistrum + Moon-cup.** The horizontal scrolled instrument across
-   her lap IS the crescent cup — a wide `( ... )` arc with `o`/`c` scroll ends. Willpower
+   her lap IS the crescent cup - a wide `( ... )` arc with `o`/`c` scroll ends. Willpower
    / true will and the AUM sound. One clean curve against the straight veil.
 
 6. **The two pillars.** Mercy and Severity, faint verticals flanking her at the edges,
-   spread by the veil and half-lost in the diagonal webbing. Present but subtle — do
+   spread by the veil and half-lost in the diagonal webbing. Present but subtle - do
    not let them compete with the figure.
 
 7. **The camel + foreground garden.** A small WHITE camel DEAD CENTER at the bottom,
    between two flowers (mirroring her seat between the pillars). Around it: yellow
    10-petal SPIRAL shell/flower on the RIGHT (force/Chokmah), concave-petal flower on
    the LEFT (receptive/Binah), a purple grape cluster (Dionysus), a green pine cone
-   (Bacchus), and faceted Plato's-solid crystals (`<>` `/\`) — the seeds/beginnings of
+   (Bacchus), and faceted Plato's-solid crystals (`<>` `/\`) - the seeds/beginnings of
    form.
 
 **Soul + garnish (8-10, tiny marks or drop if crowded):**
@@ -92,10 +92,10 @@ the crescent cup at her arms. The light-web IS the card.
 
 ## Design note (specific to this card)
 Sibling to the Moon (XVIII): both are symmetric, but where XVIII is midnight-dark, the
-Priestess is LUMINOUS. The risk is the same, flatness — the cure is DEPTH IN THE VEIL:
+Priestess is LUMINOUS. The risk is the same, flatness - the cure is DEPTH IN THE VEIL:
 let the light-web vary in density so the lattice reads as a translucent volume she sits
 within. She must stay clearly solid and readable ON TOP of the net (occlusion). Palette
-correction from the scan: this is NOT pale silver monochrome — the field is deep BLUE +
+correction from the scan: this is NOT pale silver monochrome - the field is deep BLUE +
 TEAL/EMERALD GREEN with a radiant white/cyan light-web, a gold-green crown glow, a
 pale-gold crescent cup, and a warm multicolor foreground (yellow spiral shell, olive
 flower, purple grapes, faceted crystals, white camel). The `.ans` carries the
@@ -115,13 +115,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Veil-dominant** — the crystalline light-web fills the whole field; the figure
+- **A. Veil-dominant** - the crystalline light-web fills the whole field; the figure
   emerges from it, seen through the net.
-- **B. Figure + cup dominant** — the enthroned goddess and the crescent Moon-cup are the
+- **B. Figure + cup dominant** - the enthroned goddess and the crescent Moon-cup are the
   hero; the veil is secondary texture.
-- **C. Architecture-symmetric** — the throne and the two pillars framed strongly, the
+- **C. Architecture-symmetric** - the throne and the two pillars framed strongly, the
   veil stretched between them.
-Tier: **middle path** — strict bilateral symmetry makes placement low-risk; run one
+Tier: **middle path** - strict bilateral symmetry makes placement low-risk; run one
 composer + the render loop + one adversarial critique, and escalate to full panel only
 if the light-veil won't read as a translucent volume.
 

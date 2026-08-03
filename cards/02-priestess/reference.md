@@ -1,65 +1,65 @@
-# II — The Priestess
+# II - The Priestess
 
-Definitive working reference. Synthesizes the three project sources —
+Definitive working reference. Synthesizes the three project sources -
 Crowley's *Book of Thoth*, DuQuette's *Understanding...Thoth Tarot*, and the
-esotericmeanings.com tutorial — plus the color card scan.
+esotericmeanings.com tutorial - plus the color card scan.
 
 ## Identity
 
 | Field | Value |
 |---|---|
-| Number / name | Atu II — The Priestess (Thoth; RWS = The High Priestess) |
-| Esoteric title | "The Priestess of the Silver Star" — glyph of the highest Initiation, the work of the A∴A∴ |
-| Hebrew letter | Gimel ("camel" — the beast that alone crosses the Abyss desert) |
-| Astrology | The Moon — but her PUREST, most exalted form (vs. Atu XVIII = Luna's lowest avatar); "harmonious changeability" |
-| Tree of Life | Path 13, "Unifying Intelligence"; Kether (Crown) → Tiphereth (Beauty). The sole path down the MIDDLE PILLAR, in exact balance, and the ONLY path that passes through the hidden sephira DAATH — the one direct link between Supernal Triad and Hexad across the Abyss |
+| Number / name | Atu II - The Priestess (Thoth; RWS = The High Priestess) |
+| Esoteric title | "The Priestess of the Silver Star" - glyph of the highest Initiation, the work of the A∴A∴ |
+| Hebrew letter | Gimel ("camel" - the beast that alone crosses the Abyss desert) |
+| Astrology | The Moon - but her PUREST, most exalted form (vs. Atu XVIII = Luna's lowest avatar); "harmonious changeability" |
+| Tree of Life | Path 13, "Unifying Intelligence"; Kether (Crown) → Tiphereth (Beauty). The sole path down the MIDDLE PILLAR, in exact balance, and the ONLY path that passes through the hidden sephira DAATH - the one direct link between Supernal Triad and Hexad across the Abyss |
 | Color scale (GD) | Blue; Silver; Cold pale blue; Silver rayed sky-blue |
-| Painting palette | Teal / emerald green + deep blue field, radiant white light-web, gold/yellow warm cup + right shell, muted multicolor foreground (NOT pale silver — see palette note) |
-| Keynote | The luminous VEIL OF LIGHT — light not as revelation but as the dazzling veil that hides Spirit; wholly feminine, wholly virginal; truth CONCEALED behind illusion; the HGA drawing us to Kether |
+| Painting palette | Teal / emerald green + deep blue field, radiant white light-web, gold/yellow warm cup + right shell, muted multicolor foreground (NOT pale silver - see palette note) |
+| Keynote | The luminous VEIL OF LIGHT - light not as revelation but as the dazzling veil that hides Spirit; wholly feminine, wholly virginal; truth CONCEALED behind illusion; the HGA drawing us to Kether |
 
 ## Element ranking (BoT p.72-75 + DuQuette Atu II + esotericmeanings + scan)
 
-Tier 1 — the card IS these:
-1. **The veil of light** — she is "clothed only in the luminous veil of
+Tier 1 - the card IS these:
+1. **The veil of light** - she is "clothed only in the luminous veil of
    light"; a stretched crystalline NET of fine straight rays radiating to
    fill the whole field (the veil of the Abyss, of illusion between form and
    formlessness). Both background fill AND hero. ASCII does straight rays
    well. Everything is seen THROUGH it; nothing organic sits behind it.
-2. **The enthroned figure, frontal + symmetric** — the most spiritual form
+2. **The enthroned figure, frontal + symmetric** - the most spiritual form
    of Isis the Eternal Virgin / Artemis. Pale, luminous, gazing out. Her
    ARMS SWEEP UPWARD, pulling and distorting the webbed light into the
    crescent bowl of a Moon-colored cup. Her body reads as a checkered/webbed
    lattice; lower body dissolves down into the veil. The still axis.
-3. **The horned/lunar Crown of Isis** — waxing-full-waning moon phases; with
+3. **The horned/lunar Crown of Isis** - waxing-full-waning moon phases; with
    7 moon-crescents beneath it (7 = Venus, the Empress link). An INFINITY
    sign about her eyes (connection to formless Kether). Do not omit the crown.
-4. **Bilateral symmetry / middle-pillar balance** — the whole card mirrors on
+4. **Bilateral symmetry / middle-pillar balance** - the whole card mirrors on
    the vertical axis, "in exact balance in the middle pillar." Serenity IS
    the symmetry. Aphorism: "Change is stability."
 
-Tier 2 — named and emphasized:
-5. **The bow / lyre / sistrum** — horizontal across her lap with scrolled
+Tier 2 - named and emphasized:
+5. **The bow / lyre / sistrum** - horizontal across her lap with scrolled
    ends, forming the crescent Moon-cup. Harris calls it a SISTRUM (Isis);
    Crowley the bow of Artemis; it reads as a three-stringed LYRE (Apollo,
    Tiphereth). Symbol of willpower / true will, and the AUM sound. A single
    clean scrolled curve against the straight veil.
-6. **The two pillars** — Mercy and Severity (RWS: Jachin & Boaz of Solomon's
+6. **The two pillars** - Mercy and Severity (RWS: Jachin & Boaz of Solomon's
    Temple), faintly flanking her, spread out by the veil, obscured by the
    diagonal webbing. Present but subtle.
-7. **The camel (Gimel)** — small, WHITE, DEAD CENTER at the bottom between
+7. **The camel (Gimel)** - small, WHITE, DEAD CENTER at the bottom between
    the two opposite flowers (mirroring her seat between the pillars). "In the
    midst is the Camel." Carries the water of inner consciousness across the
    desert of meditation.
-8. **The crystalline foreground garden** — nascent forms, whorls, crystals,
+8. **The crystalline foreground garden** - nascent forms, whorls, crystals,
    seeds, pods (the "beginnings of life"). Specifically: yellow 10-petal
    SPIRAL flower/shell on the RIGHT (Malkuth + force/Chokmah); concave-petal
    flower on the LEFT (receptive/Binah); grapes (Dionysus) + pine cone
    (Bacchus); and geometric Plato's-solids crystals (2 each side).
 
-Tier 3 — atmosphere / as space allows:
-9. **Inverted crescent moon on the throne base** — the subconscious (also on
+Tier 3 - atmosphere / as space allows:
+9. **Inverted crescent moon on the throne base** - the subconscious (also on
    the Moon card).
-10. **The hidden Book of Mysteries** under the lyre on her lap — esoteric
+10. **The hidden Book of Mysteries** under the lyre on her lap - esoteric
     knowledge (the path through Daath); barely visible.
 11. Full moon disk behind her head; star-points caught in the light net.
 
@@ -99,7 +99,7 @@ in the material (in front of the veil); struggling to get behind the veil.
 
 **BoT texture:** the first card to connect the Supernal Triad with the Hexad;
 a direct link between the Father in his highest aspect and the Son in his most
-perfect manifestation, in exact balance on the middle pillar — the purest and
+perfect manifestation, in exact balance on the middle pillar - the purest and
 most exalted conception of the Moon. Light is regarded not as the perfect
 manifestation of Spirit but as the VEIL that hides it, "all the more
 effectively because of its incomparably dazzling brilliance." She is light,
@@ -108,7 +108,7 @@ Read from behind the Veil of Light (the third veil of the original Nothing),
 the light is the menstruum of manifestation, the goddess Nuith. Wholly
 feminine, wholly virginal: possibility in its second stage, without any
 beginning of consummation. To the adept already in Tiphereth this is the path
-that leads UPWARD — "the Priestess of the Silver Star," the intelligible
+that leads UPWARD - "the Priestess of the Silver Star," the intelligible
 radiance of the Holy Guardian Angel, a symbol of the highest Initiation and a
 glyph of the A∴A∴. (Book of Lies, the Camel: "See! Five footprints of a
 Camel! V.V.V.V.V.")
@@ -124,7 +124,7 @@ crossing that terrible wasteland. The crystals and seeds at the bottom are the
 hidden and mysterious secrets of the beginning of life.
 
 **Letter series:** Gimel, Daleth, Hé (Atu II, III, XVII) show the Feminine
-symbol (Yin) in three forms — the Priestess = the highest, most spiritual.
+symbol (Yin) in three forms - the Priestess = the highest, most spiritual.
 
 ## Observed Harris palette (reference/02-priestess-card.jpg)
 
@@ -143,12 +143,12 @@ implies:
 
 ## Sources
 
-- Crowley, *The Book of Thoth*, "II. The High Priestess" —
+- Crowley, *The Book of Thoth*, "II. The High Priestess" -
   `reference/Crowley - The Book of Thoth.txt` line 2489; divinatory appendix
   line 9266
 - DuQuette, *Understanding Aleister Crowley's Thoth Tarot*, Atu II (book
-  p.101-103) — `reference/DuQuette - ....txt` line 4284; PDF page 120
-- esotericmeanings.com Thoth Priestess tutorial —
+  p.101-103) - `reference/DuQuette - ....txt` line 4284; PDF page 120
+- esotericmeanings.com Thoth Priestess tutorial -
   `reference/esoteric-meanings/02-priestess.txt`
 - Color scan: `reference/02-priestess-card.jpg`
   (esotericmeanings.com/wp-content/uploads/2016/01/thothpriestess.jpg, 1112×1636)

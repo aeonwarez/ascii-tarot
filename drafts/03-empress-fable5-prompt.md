@@ -1,4 +1,4 @@
-# Fable Prompt — Atu III, The Empress (Thoth)
+# Fable Prompt - Atu III, The Empress (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -16,12 +16,12 @@ never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
 ## Reasoning tier
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
-placement drift or busyness — for those, use the render & review loop.
+placement drift or busyness - for those, use the render & review loop.
 
 ## Subject
-**Atu III — The Empress.** Hebrew letter Daleth ("door"), attribution the planet
+**Atu III - The Empress.** Hebrew letter Daleth ("door"), attribution the planet
 Venus. Path 14 "Illuminating Intelligence," Chokmah → Binah, uniting the Supernal
-Father with the Supernal Mother — one of the three paths wholly ABOVE the Abyss and
+Father with the Supernal Mother - one of the three paths wholly ABOVE the Abyss and
 the FIRST trump to join the two side pillars. "The Daughter of the Mighty Ones."
 She is Venus/Aphrodite (consort to the Emperor/Mars), the Great Mother nurturing the
 Universe with the milk of Spiritual Light, and the alchemical principle SALT. The
@@ -30,14 +30,14 @@ doctrine: the fundamental formula of the Universe is LOVE.
 ## The composition, in one sentence
 A serene enthroned goddess sits high and frontal, crowned with the moon-phase Crown
 of Isis between a waxing and a waning moon, her ARMS forming the alchemical Salt glyph
-— a blue lotus lifted to her heart in one hand, the other arm curved low to cradle her
+- a blue lotus lifted to her heart in one hand, the other arm curved low to cradle her
 pregnant belly (Mater Triumphans); her twisted-flame/grass throne rises through cool
 green vegetation with a sparrow and dove perched at its tops, and below sit the white
 Pelican feeding its young, the white double-eagle shield holding the Moon, and a carpet
 of fleurs-de-lis and fish adoring the Secret Rose.
 
 Hold two things above all: the SALT-glyph gesture of the arms (lotus-to-heart + belly
-cradle, she is pregnant), and the overall WARM VEGETAL SERENITY — soft green growth,
+cradle, she is pregnant), and the overall WARM VEGETAL SERENITY - soft green growth,
 not a rigid geometric field. She is love uniting Will and Understanding; disregard the
 parts, feel the whole.
 
@@ -56,7 +56,7 @@ parts, feel the whole.
 
 2. **The Crown of Isis + revolving moons.** Moon-phase crown (waxing-full-waning) at
    her head, topped by the Maltese cross (four elements in balance). A revolving moon
-   to each side of her — a waxing crescent she faces and a waning crescent — legible,
+   to each side of her - a waxing crescent she faces and a waning crescent - legible,
    iconic. Do not omit; they name her Venus-Luna.
 
 3. **The twisted throne + sparrow & dove.** Throne uprights = twisted ropes of blue
@@ -64,17 +64,17 @@ parts, feel the whole.
    sacred birds of Venus at the tops: a small sparrow and a small dove.
 
 4. **Venus / the vegetal whole.** Cool EMERALD + SPRING GREEN + SKY BLUE field of soft
-   leafy growth (dithered masses, NOT straight rays — this is her contrast with the
+   leafy growth (dithered masses, NOT straight rays - this is her contrast with the
    Priestess). A golden ZODIAC girdle at her waist. The Venus glyph faintly hidden in
    the shield. The card reads as one soothing whole; symmetry is gentle, not rigid.
 
 **Makes it Thoth (5-7):**
 
 5. **The lotus of Isis to the heart.** The blue lotus in her right hand held over the
-   heart chakra — roots in water, petals open to the Sun (belly of the chalice = the
+   heart chakra - roots in water, petals open to the Sun (belly of the chalice = the
    Holy Grail). Heart-path, not head-path. One clean curved bloom.
 
-6. **The heraldry — Pelican + White Eagle.** LOWER LEFT: the white Pelican bending to
+6. **The heraldry - Pelican + White Eagle.** LOWER LEFT: the white Pelican bending to
    feed its brood from its own breast (the Great Mother; Aeon of Osiris). LOWER RIGHT:
    a heater shield, green+white field, a white DOUBLE-HEADED EAGLE holding a small
    waxing Moon in its beaks (the alchemical white tincture; New Aeon of Horus).
@@ -86,14 +86,14 @@ parts, feel the whole.
 **Soul + garnish (8-10, tiny marks or drop if crowded):**
 
 8. Bees + black/white dominos wrapped in spiral rose-petal lines on her robe.
-9. The Arch / Door of Daleth behind her (the "Gate of Heaven") — a faint framing arch.
+9. The Arch / Door of Daleth behind her (the "Gate of Heaven") - a faint framing arch.
 10. Antimony glyph (orb + cross) echoed at the crown; two tiny fish in the waters.
 
 ---
 
 ## Design note (specific to this card)
 Sibling/consort to the Emperor (IV): where he is fiery red, angular, martial, SHE is
-the cool cure — soft green vegetation, twisted-grass throne, rounded pregnant curves.
+the cool cure - soft green vegetation, twisted-grass throne, rounded pregnant curves.
 The risk here is the OPPOSITE of the Priestess: not flatness but BUSYNESS. There are
 many named symbols (crown, moons, lotus, birds, pelican, eagle-shield, rose, fish,
 fleurs, bees, dominos, zodiac). Crowley's own instruction is the cure: "disregard the
@@ -119,13 +119,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Figure + Salt-arms dominant** — the pregnant goddess and the lotus-to-heart +
+- **A. Figure + Salt-arms dominant** - the pregnant goddess and the lotus-to-heart +
   belly-cradle gesture are the hero.
-- **B. Vegetal-throne enveloping** — the twisted-grass throne and soft green growth wrap
+- **B. Vegetal-throne enveloping** - the twisted-grass throne and soft green growth wrap
   a nested figure; the whole card is her garden.
-- **C. Heraldry-framed** — pelican, white eagle-shield and Secret Rose balanced in the
+- **C. Heraldry-framed** - pelican, white eagle-shield and Secret Rose balanced in the
   corners around a calmer central figure.
-Tier: **middle path** — the risk is busyness, not composition ("disregard the parts");
+Tier: **middle path** - the risk is busyness, not composition ("disregard the parts");
 run one composer + the render loop + one adversarial critique, escalate only if it will
 not cohere as one whole.
 
@@ -135,7 +135,7 @@ top plaque `[ III ]` in the rule; bottom band `THE EMPRESS` / `~ daleth · venus
 
 ## The one-line brief
 A moon-crowned green goddess enthroned and pregnant, arms tracing the alchemical Salt
-glyph — blue lotus to her heart, the other arm cradling her belly — on a twisted-grass
+glyph - blue lotus to her heart, the other arm cradling her belly - on a twisted-grass
 throne with sparrow and dove, amid cool vegetation, a waxing and waning moon revolving
 beside her; below, the white Pelican feeding its young and the white double-eagle
 shield holding the Moon, over a carpet of fleurs-de-lis and fish adoring the Secret

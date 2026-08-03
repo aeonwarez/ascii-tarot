@@ -1,4 +1,4 @@
-# Fable5 Prompt — Atu XVII, The Star (Thoth)
+# Fable5 Prompt - Atu XVII, The Star (Thoth)
 
 ## Role
 You are rendering monospace ASCII/ANSI art of a Thoth Tarot card. Your job is not to draw a diagram of the card's symbols but to reproduce the *composition and energy* of Lady Frieda Harris's painting in text. Fidelity to Crowley's iconography AND to the feel of the original image both matter. Work in a fixed-width grid, Courier New assumed.
@@ -18,11 +18,11 @@ never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
 ## Reasoning tier
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
-placement drift, an under-scaled globe, or the spiral-vs-straight read — for those, use
+placement drift, an under-scaled globe, or the spiral-vs-straight read - for those, use
 the render & review loop.
 
 ## Subject
-**Atu XVII — The Star.** Hebrew letter Heh, attribution Aquarius (post-AL II:57 swap: Star keeps Aquarius, Emperor takes Aries/Tzaddi). Nuith personified in tangible human form. The card of hope arriving after the Tower's destruction.
+**Atu XVII - The Star.** Hebrew letter Heh, attribution Aquarius (post-AL II:57 swap: Star keeps Aquarius, Emperor takes Aries/Tzaddi). Nuith personified in tangible human form. The card of hope arriving after the Tower's destruction.
 
 ## The composition, in one sentence
 She kneels against a giant rose celestial globe; everything in the frame spirals except one rigid straight stream from the lower cup.
@@ -89,13 +89,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Globe-as-stage dominant** — the huge rose celestial sphere is the field; the
+- **A. Globe-as-stage dominant** - the huge rose celestial sphere is the field; the
   figure kneels small in front of it.
-- **B. Figure-dominant** — the kneeling, whirling Nuith is the hero, the globe a backdrop
+- **B. Figure-dominant** - the kneeling, whirling Nuith is the hero, the globe a backdrop
   mass behind her.
-- **C. Spiral-field dominant** — everything spirals across the whole card, with the one
+- **C. Spiral-field dominant** - everything spirals across the whole card, with the one
   rigid rectilinear stream from the lower cup as the single straight read.
-Tier: **full panel** — hero card; the globe scale and the spiral-vs-straight read are
+Tier: **full panel** - hero card; the globe scale and the spiral-vs-straight read are
 hard and contested, so spend the full cost.
 
 ## Output

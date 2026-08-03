@@ -1,4 +1,4 @@
-# Fable Prompt — Atu V, The Hierophant (Thoth)
+# Fable Prompt - Atu V, The Hierophant (Thoth)
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
@@ -18,12 +18,12 @@ band. Color mapped to the Harris painting. Sign `aw` or unsigned, never `jgs`. O
 Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
 quality shows in the esoteric synthesis (the nested hexagram/pentagram, the three-ring
 wand, the New-Aeon Kerub swap) and clean compositor structure. It does NOT fix placement
-drift — for that, use the render & review loop.
+drift - for that, use the render & review loop.
 
 ## Subject
-**Atu V — The Hierophant.** Hebrew letter Vau ("nail" — that which JOINS), the sign
+**Atu V - The Hierophant.** Hebrew letter Vau ("nail" - that which JOINS), the sign
 Taurus (Venus rules, Moon exalted). Path 16, "The Eternal Intelligence," Chokmah → Chesed
-— the bridge from the Supernal Triangle into structure, tradition, the learning and
+- the bridge from the Supernal Triangle into structure, tradition, the learning and
 teaching of cosmic law. NOT the pale Aeon-of-Osiris Pope but the bold New-Aeon initiator,
 a Babylonian priest-king; the Holy Guardian Angel who nails our microcosm (the pentagram)
 to the macrocosm (the hexagram). "Offer thyself Virgin to the Knowledge and Conversation
@@ -39,7 +39,7 @@ his head, and the four Kerubic beasts guarding the corners, all against the dark
 starry night of Nuit.
 
 Hold two things above all: the NESTED GEOMETRY (hexagram enclosing the body, pentagram +
-dancing child on the chest — macrocosm around microcosm) and the frontal, symmetric,
+dancing child on the chest - macrocosm around microcosm) and the frontal, symmetric,
 enthroned STILLNESS. This is the hieratic opposite of the Magus's motion.
 
 ---
@@ -51,15 +51,15 @@ enthroned STILLNESS. This is the hieratic opposite of the Magus's motion.
 1. **The enthroned Hierophant, centered on col 23.** A crowned priest-king (crown of
    Osiris), frontal, in heavy embroidered vestments, calm and confident, seated on the
    BULL of Taurus. RIGHT hand raises the three-ringed wand; LEFT hand gives the blessing
-   (two fingers up, two down — a bridge between heaven and earth). Draw him ON TOP; break
-   the background behind him. His spine, crown and the bull beneath sit on column 23 —
+   (two fingers up, two down - a bridge between heaven and earth). Draw him ON TOP; break
+   the background behind him. His spine, crown and the bull beneath sit on column 23 -
    mirror the throne about the axis; do not let the mass drift left.
 
 2. **The nested geometry: hexagram + chest-pentagram + dancing child.** A large HEXAGRAM
    encloses his whole seated body (the macrocosm). On his breast a PENTAGRAM (an inverted
    star holding an upright one) contains a small glad DANCING male child (the microcosm,
    the New Aeon of Horus, "nailed" to the macrocosm). This union is the single most
-   important read — keep both stars legible and concentric on the axis.
+   important read - keep both stars legible and concentric on the axis.
 
 3. **The Scarlet Woman girt with a sword.** A paler standing woman before/below him
    (Venus / Isis, ruler of Taurus), ARMED and MILITANT with a vertical SWORD, carrying
@@ -93,7 +93,7 @@ enthroned STILLNESS. This is the hieratic opposite of the Magus's motion.
 
 ## Design note (specific to this card)
 Sibling/foil to the Magus (I) and the Priestess (II): where the Magus is flung-out MOTION
-and the Priestess is a luminous veil, the Hierophant is WEIGHT and RITUAL STILLNESS —
+and the Priestess is a luminous veil, the Hierophant is WEIGHT and RITUAL STILLNESS -
 frontal, symmetric, heavy, enthroned. And he is the outer-teacher counterpart to the
 Priestess's inner guide. Build the read around the nested geometry: if a viewer sees a
 hexagram around the body with a pentagram-and-child on the chest, the card works; the
@@ -122,13 +122,13 @@ Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer
 in parallel (each running the Render & review loop above to a finished candidate), three
 judges scoring each against the Harris scan + axis guide, then synthesis / polish /
 integration merging the strongest read. Three strategies to seed the composers:
-- **A. Nested-geometry dominant** — the hexagram enclosing the body with the
+- **A. Nested-geometry dominant** - the hexagram enclosing the body with the
   chest-pentagram and dancing child as the hero read (macrocosm around microcosm).
-- **B. Enthroned-figure dominant** — the priest-king on the bull, crown, three-ring wand
+- **B. Enthroned-figure dominant** - the priest-king on the bull, crown, three-ring wand
   and blessing hand foremost.
-- **C. Shrine-symmetry dominant** — the elephants, corner Kerubs and the oriel frame a
+- **C. Shrine-symmetry dominant** - the elephants, corner Kerubs and the oriel frame a
   smaller seated figure; the whole card is the shrine.
-Tier: **full panel** — a crowded, symmetric shrine with many contested elements to
+Tier: **full panel** - a crowded, symmetric shrine with many contested elements to
 balance; spend the full cost.
 
 ## Title band
@@ -141,4 +141,4 @@ enclosed by a hexagram and a chest-pentagram holding a small dancing Child of Ho
 hand raising a three-ringed wand and left hand blessing, the sword-bearing Scarlet Woman
 before him, elephants flanking the throne, an oriel of snake, dove, rose and nine nails
 behind his head, the four Kerubs in the corners, all on the dark-blue night of Nuit. The
-initiator who nails microcosm to macrocosm — ritual stillness, not motion.
+initiator who nails microcosm to macrocosm - ritual stillness, not motion.
