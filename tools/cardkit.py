@@ -199,7 +199,7 @@ _HIER_TRUE = {
     "crown": "#e0c04a", "hex": "#e8d44a", "penta": "#f0ecd8",
     "child": "#a8d8c8", "woman": "#e8d0d8", "sword": "#c8c8d8",
     "moon": "#d8d8e8", "bull": "#8a6a4a", "throne": "#7a5a3a",
-    "olive": "#8a8a5a", "eleph": "#9a9ab0", "kerub": "#8fa8c8",
+    "olive": "#8a8a5a", "eleph": "#c8874a", "kerub": "#d8c090",
     "oriel": "#c8b8d8", "rose": "#d87a8a", "snake": "#68b060",
     "dove": "#f0f0f8", "nails": "#c8c8d8", "wand": "#e0c04a",
     "ringr": "#d85040", "ringg": "#68b060", "ringy": "#e8e0a0",
