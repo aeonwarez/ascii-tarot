@@ -2,12 +2,22 @@
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
-leading whitespace preserved. Cells are 1:2 so draw circles/curves ~2:1 wider than
-tall. Courier New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X`
-allowed. Solid masses dithered for volume, never open outlines, lit directionally.
-Foreground figure drawn ON TOP; break background edges behind it. Full-bleed to the
-border. Keep outer frame + bottom title band. Color mapped to the Harris painting.
-Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+leading whitespace preserved. **Center on the axis (col 23):** every element of the
+central figure sits so its VISUAL center is column 23, not its left edge. Prefer the
+mirror helpers (`PM`/`PMB` about `AXIS = 23.0`) for anything bilaterally symmetric;
+for asymmetric sprites place at `23 - len(s)//2` and confirm with `--axis`. Cells are
+1:2 so draw circles/curves ~2:1 wider than tall. Courier New; extended alphabet
+`´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X` allowed. Solid masses dithered for
+volume, never open outlines, lit directionally. Foreground figure drawn ON TOP; break
+background edges behind it. Full-bleed to the border. Keep outer frame + bottom title
+band. Color mapped to the Harris painting. Sign `aw` or unsigned, never `jgs`. Output
+one `.txt` + one `.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows most in the esoteric SYNTHESIS (Mercury glyph, the eight objects, the
+Kether/Binah light) and clean compositor structure. It does NOT fix placement drift —
+for that, use the render & review loop.
 
 ## Subject
 **Atu I — The Magus.** Hebrew letter Beth ("house"), the planet Mercury. Path 12,
@@ -36,22 +46,26 @@ orbiting him. This is the motion-card opposite of the Priestess's stillness.
 
 **Non-negotiable (1-4, it isn't the Magus without these):**
 
-1. **The airborne Mercury-glyph youth.** A naked, fair, ANDROGYNOUS youth
-   (masculine + feminine, like the Fool), suspended in dynamic motion, attitude
-   like a swastika / thunderbolt. His body reads as the alchemical MERCURY glyph:
-   two serpents at his head make the horns, the wide stylized wings at his feet
-   make the arrowhead-cross. Winged helmet, winged heels. Draw him ON TOP.
+1. **The airborne Mercury-glyph youth, centered on col 23.** A naked, fair,
+   ANDROGYNOUS youth (masculine + feminine, like the Fool), suspended in dynamic
+   motion, attitude like a swastika / thunderbolt. His body reads as the alchemical
+   MERCURY glyph: two serpents at his head make the horns, the wide stylized wings at
+   his feet make the arrowhead-cross. Winged helmet, winged heels. Draw him ON TOP.
+   His VISUAL center (and the caduceus rod) sits on column 23 — mirror the symmetric
+   parts about `AXIS = 23.0`; the classic tell of the bug is a centered head over a
+   body that leans a few columns left.
 
 2. **The eight juggled objects, ringing him in midair.** He joyfully juggles
    EIGHT small distinct glyphs around his body: Wand (a phoenix wand), Cup
    (two-handled Grecian), Dagger/stiletto, Disk (the 8-fold star of Mercury),
    the Winged/Orphic Egg, the Stylus, the Scroll/Papyrus, and the Wand of Double
-   Power. Keep them small, legible, and clearly airborne.
+   Power. Keep them small, legible, and clearly airborne. Balance them left/right of
+   the axis so the orbit reads centered, not lopsided.
 
 3. **The great caduceus.** A tall golden CADUCEUS as his central axis: its rod
-   runs from below his feet to the very bottom of the card; its winged head
-   spans the full width of the top and curves down behind his neck. A DOVE
-   descends inside its circle (the eye of Horus / spirit entering creation).
+   runs from below his feet to the very bottom of the card ON COL 23; its winged head
+   spans the full width of the top and curves down behind his neck. A DOVE descends
+   inside its circle (the eye of Horus / spirit entering creation).
 
 4. **Kether light above, Binah dark below.** A bright WHITE V-wedge of Kether
    light behind and above his head (narrowing upward, an inverted formless
@@ -93,6 +107,35 @@ the Ape small in the lower-right so it reads as a footnote, not a second figure.
 palette from the scan is warm and luminous: a YELLOW-GOLD figure and caduceus against a
 white V of Kether light, indigo/violet Binah dark below, with small color accents on
 the juggled weapons. The `.ans` carries gold figure vs. white light V vs. indigo depth.
+
+Watch the axis trap here more than most: the body is asymmetric (swastika thrust), so
+it is tempting to place it by its left edge and let it drift. Anchor the caduceus rod
+and the head on col 23, then hang the diagonal motion off that spine.
+
+## Render & review
+Do not judge placement, mass volume, occlusion, or palette by reading the source. Run
+the full chain and LOOK: `compose_01-magus_lg.py` → `frame.py <art> "THE MAGUS"
+"~ beth · mercury ~" -w 47 -s majors -n I -o 01-magus-lg-v1.txt` → `cardkit.py
+01-magus` → `render_png.py 01-magus --axis`, then OPEN the PNG and critique it against
+the Harris scan: is the figure centered on the axis line? does the Mercury glyph read?
+are the eight objects balanced around him? do the light V and Binah dark read as mass,
+not outline? Fix the compositor and repeat. Ship at ~80% once the render holds up (2-3
+passes max). Note: `01-magus` must be added to `cardkit.CONFIGS` before render_png
+will run. See FABLE_TEMPLATE.md "Render & review loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Mercury-glyph figure dominant** — the swastika-motion body (serpent-horns +
+  foot-wings) is the hero, the eight objects tight around him.
+- **B. Caduceus-spine dominant** — the full-height caduceus is the hero, figure overlaid
+  on it, dove descending in the circle emphasized.
+- **C. Juggling-orbit dominant** — the eight objects flung wide in a balanced ring, the
+  figure smaller at the centered hub.
+Tier: **full panel** — asymmetric swastika motion plus eight objects makes this the
+highest axis / composition risk of the set; spend the full cost.
 
 ## Title band
 Via `tools/frame.py -s majors -n 1`:

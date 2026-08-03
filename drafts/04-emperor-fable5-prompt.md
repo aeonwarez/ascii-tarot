@@ -2,12 +2,22 @@
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
-leading whitespace preserved. Cells are 1:2 so draw circles/curves ~2:1 wider than
-tall. Courier New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X`
-allowed. Solid masses dithered for volume, never open outlines, lit directionally.
-Foreground figure drawn ON TOP; break background edges behind it. Full-bleed to the
-border. Keep outer frame + bottom title band. Color mapped to the Harris painting.
-Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+leading whitespace preserved. **Center on the axis (col 23):** the enthroned figure's
+visual center (spine, crown, throne midline) sits on column 23, not its left edge.
+Mirror the symmetric throne/regalia about `AXIS = 23.0` with `PM`/`PMB`; for asymmetric
+sprites place at `23 - len(s)//2` and verify with `--axis`. The classic bug tell is a
+centered head over a body that leans a few columns left. Cells are 1:2 so draw
+circles/curves ~2:1 wider than tall. Courier New; extended alphabet `´ ‾ ¡ ·` +
+line-glyphs `o O v V T L 7 U c C x X` allowed. Solid masses dithered for volume, never
+open outlines, lit directionally. Foreground figure drawn ON TOP; break background edges
+behind it. Full-bleed to the border. Keep outer frame + bottom title band. Color mapped
+to the Harris painting. Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one
+`.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
+placement drift — for that, use the render & review loop.
 
 ## Subject
 **Atu IV — The Emperor.** Hebrew letter Tzaddi ("fish hook"; Crowley's swap,
@@ -36,11 +46,13 @@ This is the masculine fire-mirror to the Empress's cool green.
 
 **Non-negotiable (1-4, it isn't the Emperor without these):**
 
-1. **The enthroned Emperor in the Sulphur posture.** A crowned bearded king,
-   frontal, imperial vestments, calm authority, gazing to his left (toward the
-   Empress). His BODY IS THE ALCHEMICAL SULPHUR GLYPH: head + arms make an
-   upright TRIANGLE, crossed legs make the CROSS below. Keep the silhouette
-   geometric and unmistakable. Draw him ON TOP; break the flames behind him.
+1. **The enthroned Emperor in the Sulphur posture, centered on col 23.** A crowned
+   bearded king, frontal, imperial vestments, calm authority, gazing to his left
+   (toward the Empress). His BODY IS THE ALCHEMICAL SULPHUR GLYPH: head + arms make
+   an upright TRIANGLE, crossed legs make the CROSS below. Keep the silhouette
+   geometric and unmistakable. Draw him ON TOP; break the flames behind him. His spine
+   and the throne midline sit on column 23 — the head-gaze tilts left but the MASS
+   stays centered; do not let the whole figure drift left of the axis.
 
 2. **The ram throne.** The throne's arm-capitals are the heads of the Himalayan
    wild RAM (Aries), curled horns clear. A 16-point star disk set on each throne
@@ -92,6 +104,31 @@ placement) even though Crowley's swap puts him on Netzach→Yesod. Palette from 
 dominant SCARLET / FLAME RED field, GOLD crown + sceptre + regalia, CRIMSON shield
 disk, WHITE Lamb and white diagonal light shaft. The `.ans` carries red field vs. gold
 regalia vs. crimson disk vs. white lamb/light.
+
+## Render & review
+Do not judge placement, mass volume, occlusion, or palette by reading the source. Run
+the chain and LOOK: `compose_04-emperor_lg.py` → `frame.py` → `cardkit.py 04-emperor` →
+`render_png.py 04-emperor --axis`, then OPEN the PNG and critique against the Harris
+scan: does the figure sit on the axis guide (not leaning left)? can you trace the
+Sulphur glyph (triangle over cross)? do the flames read as angular mass, not soft fill?
+are the heraldry props small and low so they don't fight the figure? Fix the compositor
+and repeat. Ship at ~80% once the render holds (2-3 passes max). See FABLE_TEMPLATE.md
+"Render & review loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Sulphur-glyph silhouette dominant** — the geometric triangle-over-cross body is
+  the hero, unmistakable at a glance.
+- **B. Throne-architecture dominant** — the ram-headed throne and regalia framed foremost,
+  the figure seated within.
+- **C. Flame-field dominant** — scarlet fire fills the card and the figure reads as the
+  ordered negative space within the blaze.
+Tier: **middle path** — frontal and near-symmetric once centered on the axis; run one
+composer + the render loop + one adversarial critique, escalate only if the Sulphur glyph
+will not read.
 
 ## Title band
 Via `tools/frame.py -s majors -n 4`:

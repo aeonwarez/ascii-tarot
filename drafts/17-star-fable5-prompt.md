@@ -3,6 +3,24 @@
 ## Role
 You are rendering monospace ASCII/ANSI art of a Thoth Tarot card. Your job is not to draw a diagram of the card's symbols but to reproduce the *composition and energy* of Lady Frieda Harris's painting in text. Fidelity to Crowley's iconography AND to the feel of the original image both matter. Work in a fixed-width grid, Courier New assumed.
 
+## Invariants (recap of FABLE_TEMPLATE.md)
+Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact leading
+whitespace preserved. **Center on the axis (col 23):** the rose celestial globe (the
+stage) is centered on column 23; the kneeling figure hangs against it, her mass balanced
+about the axis. Place asymmetric sprites at `23 - len(s)//2` and verify with `--axis`.
+Cells are 1:2 so draw circles/curves ~2:1 wider than tall (the globe especially). Courier
+New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X` allowed. Solid
+masses dithered for volume, never open outlines, lit directionally. Foreground figure
+drawn ON TOP; break background edges behind it. Full-bleed to the border. Keep outer
+frame + bottom title band. Color mapped to the Harris painting. Sign `aw` or unsigned,
+never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
+placement drift, an under-scaled globe, or the spiral-vs-straight read — for those, use
+the render & review loop.
+
 ## Subject
 **Atu XVII — The Star.** Hebrew letter Heh, attribution Aquarius (post-AL II:57 swap: Star keeps Aquarius, Emperor takes Aries/Tzaddi). Nuith personified in tangible human form. The card of hope arriving after the Tower's destruction.
 
@@ -54,6 +72,31 @@ Hold those two facts above all else. If you get only two things right, get the g
 - **Line alphabet:** basic `` ` ~ ! ^ ( ) - _ + = ; : ' " , . \ / | < > [ ] { }`` plus extended `´ ‾ ¡ ·` and alphanumeric line-glyphs `o O v V T L 7 U c C x X`.
 - **Full-bleed density.** Push composition out to the card border. The painting is edge-to-edge; do not float a sparse figure in the middle of empty frame.
 - **Card frame:** keep the outer border box and the bottom title band `XVII . THE STAR  ~ aquarius ~`.
+
+## Render & review
+Do not judge globe scale, the spiral-vs-straight contrast, placement, or palette by
+reading the source. Run the chain and LOOK: `compose_17-star_lg.py` → `frame.py` →
+`cardkit.py 17-star` → `render_png.py 17-star --axis`, then OPEN the PNG and critique
+against the Harris scan: is the globe big enough to be the STAGE (figure kneels in front
+of it, centered on the axis guide)? does everything spiral EXCEPT the one rigid stream
+from the lower cup? do the three stars read as real heptagrams? is the palette rose /
+cyan-silver / indigo with no stray colors? Fix the compositor and repeat. Ship at ~80%
+once the render holds (2-3 passes max). Note: `17-star` must be in `cardkit.CONFIGS`
+before render_png will run. See FABLE_TEMPLATE.md "Render & review loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Globe-as-stage dominant** — the huge rose celestial sphere is the field; the
+  figure kneels small in front of it.
+- **B. Figure-dominant** — the kneeling, whirling Nuith is the hero, the globe a backdrop
+  mass behind her.
+- **C. Spiral-field dominant** — everything spirals across the whole card, with the one
+  rigid rectilinear stream from the lower cup as the single straight read.
+Tier: **full panel** — hero card; the globe scale and the spiral-vs-straight read are
+hard and contested, so spend the full cost.
 
 ## Output
 - One large-format art block (target the existing `17-star-art-lg.txt` dimensions).

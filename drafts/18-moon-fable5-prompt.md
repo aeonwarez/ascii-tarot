@@ -2,13 +2,20 @@
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
-leading whitespace preserved. Cells are 1:2 so draw circles/curves ~2:1 wider than
-tall. Courier New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X`
-allowed. Solid masses dithered for volume, never open outlines, lit directionally.
-Foreground drawn ON TOP; break background edges behind it. Full-bleed to the border.
-Frame + two-line band via `tools/frame.py -s majors`. Color mapped to the Harris
-painting. Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.ans`
-(256 + 16 fallback).
+leading whitespace preserved. **Center on the axis (col 23):** the whole scene is
+bilaterally symmetric, so mirror everything (towers, mountains, path, Anubis, moon)
+about `AXIS = 23.0` with the `PM`/`PMB` helpers and verify with `--axis`. Cells are 1:2
+so draw circles/curves ~2:1 wider than tall. Courier New; extended alphabet `´ ‾ ¡ ·` +
+line-glyphs `o O v V T L 7 U c C x X` allowed. Solid masses dithered for volume, never
+open outlines, lit directionally. Foreground drawn ON TOP; break background edges behind
+it. Full-bleed to the border. Frame + two-line band via `tools/frame.py -s majors`.
+Color mapped to the Harris painting. Sign `aw` or unsigned, never `jgs`. Output one
+`.txt` + one `.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
+placement drift or flatness — for those, use the render & review loop.
 
 ## Subject
 **Atu XVIII — The Moon.** Hebrew letter Qoph ("back of the head"), element/sign Pisces
@@ -76,6 +83,30 @@ receding central path (directive 2) is the cure. And it is the darkest card in t
 deck: the `.ans` should be indigo/black dominant, pale sickly moon, blood-red drops,
 and ONE warm gold point (the scarab-sun) at the bottom. That single warm mark alone in
 the dark IS the meaning, the sun borne through night. Do not add other warmth.
+
+## Render & review
+Do not judge symmetry, depth, or palette by reading the source. Run the chain and LOOK:
+`compose_18-moon_lg.py` → `frame.py` → `cardkit.py 18-moon` → `render_png.py 18-moon
+--axis`, then OPEN the PNG and critique against the Harris scan: is the scene truly
+mirrored on the axis guide? does the central path RECEDE (converging lines) rather than
+sit flat? exactly nine drops? is the whole card indigo/black dominant with the single
+warm scarab-sun the only warmth at the very bottom? Fix the compositor and repeat. Ship
+at ~80% once the render holds (2-3 passes max). See FABLE_TEMPLATE.md "Render & review
+loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Architectural-symmetry dominant** — towers, mountains and path framed as a strict
+  mirror.
+- **B. Path-recession dominant** — depth first; the receding central road is the hero
+  read, converging to the gap.
+- **C. Atmosphere dominant** — the dark field, the nine drops and the single warm
+  scarab-sun as the emotional focus.
+Tier: **middle path** — naturally ASCII-friendly (mirror symmetry + perspective); run one
+composer + the render loop + one adversarial critique, escalate only if it reads flat.
 
 ## Title band
 Two centered lines via `tools/frame.py -s majors`:

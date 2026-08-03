@@ -2,12 +2,21 @@
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
-leading whitespace preserved. Cells are 1:2 so draw circles/curves ~2:1 wider than
-tall. Courier New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X`
-allowed. Solid masses dithered for volume, never open outlines, lit directionally.
-Foreground figure drawn ON TOP; break background edges behind it. Full-bleed to the
-border. Keep outer frame + bottom title band. Color mapped to the Harris painting.
-Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+leading whitespace preserved. **Center on the axis (col 23):** the enthroned figure's
+visual center sits on column 23, not its left edge. Mirror the symmetric throne/crown
+about `AXIS = 23.0` with `PM`/`PMB`; for asymmetric sprites place at `23 - len(s)//2`
+and verify with `--axis`. The classic bug tell is a centered head over a body that leans
+a few columns left. Cells are 1:2 so draw circles/curves ~2:1 wider than tall. Courier
+New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X` allowed. Solid
+masses dithered for volume, never open outlines, lit directionally. Foreground figure
+drawn ON TOP; break background edges behind it. Full-bleed to the border. Keep outer
+frame + bottom title band. Color mapped to the Harris painting. Sign `aw` or unsigned,
+never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
+placement drift or busyness — for those, use the render & review loop.
 
 ## Subject
 **Atu III — The Empress.** Hebrew letter Daleth ("door"), attribution the planet
@@ -94,6 +103,31 @@ the figure. Palette from the scan: cool EMERALD/SPRING GREEN + SKY BLUE field, R
 blouse, GOLD zodiac belt, BLUE lotus, WHITE pelican and double-eagle heraldry, and a
 warm-white Secret Rose over green waters. The `.ans` carries green field vs. red blouse
 vs. gold belt vs. white heraldry.
+
+## Render & review
+Do not judge placement, mass volume, occlusion, or palette by reading the source. Run
+the chain and LOOK: `compose_03-empress_lg.py` → `frame.py` → `cardkit.py 03-empress` →
+`render_png.py 03-empress --axis`, then OPEN the PNG and critique against the Harris
+scan: does she sit on the axis guide (not leaning left)? do the Salt-glyph arms read
+(lotus-to-heart + belly cradle)? is the field soft vegetal mass, not straight rays? are
+the many props (pelican, eagle-shield, rose, fish, fleurs) small and quiet in the
+corners so they don't fight the figure? Fix the compositor and repeat. Ship at ~80% once
+the render holds (2-3 passes max). See FABLE_TEMPLATE.md "Render & review loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Figure + Salt-arms dominant** — the pregnant goddess and the lotus-to-heart +
+  belly-cradle gesture are the hero.
+- **B. Vegetal-throne enveloping** — the twisted-grass throne and soft green growth wrap
+  a nested figure; the whole card is her garden.
+- **C. Heraldry-framed** — pelican, white eagle-shield and Secret Rose balanced in the
+  corners around a calmer central figure.
+Tier: **middle path** — the risk is busyness, not composition ("disregard the parts");
+run one composer + the render loop + one adversarial critique, escalate only if it will
+not cohere as one whole.
 
 ## Title band
 Via `tools/frame.py -s majors -n 3`:

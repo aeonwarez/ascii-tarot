@@ -2,12 +2,21 @@
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
-leading whitespace preserved. Cells are 1:2 so draw circles/curves ~2:1 wider than
-tall. Courier New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X`
-allowed. Solid masses dithered for volume, never open outlines, lit directionally.
-Foreground figure drawn ON TOP; break background edges behind it. Full-bleed to the
-border. Keep outer frame + bottom title band. Color mapped to the Harris painting.
-Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+leading whitespace preserved. **Center on the axis (col 23):** the central figure's
+visual center sits on column 23, not its left edge. The leap is asymmetric, so place
+the body sprite at `23 - len(s)//2` and let the vortex spiral radiate from col 23;
+verify with `--axis`. The classic bug tell is a centered head over a body that leans a
+few columns left. Cells are 1:2 so draw circles/curves ~2:1 wider than tall. Courier
+New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X` allowed. Solid
+masses dithered for volume, never open outlines, lit directionally. Foreground figure
+drawn ON TOP; break background edges behind it. Full-bleed to the border. Keep outer
+frame + bottom title band. Color mapped to the Harris painting. Sign `aw` or unsigned,
+never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
+placement drift or a muddy color spiral — for those, use the render & review loop.
 
 ## Subject
 **Atu 0 — The Fool.** Hebrew letter Aleph, element Air. The Bornless Spirit, the Zero
@@ -71,6 +80,29 @@ CANNOT draw all ten elements and stay legible. Priority order is literal: nail 1
 (figure + color vortex + sun + dove), add 5-7 as clear small creatures, render 8-10 as
 tiny marks or drop them. Do not clutter the color spiral into mud. Empty, well-lit
 spiral beats a crammed one.
+
+## Render & review
+Do not judge placement or the color spiral by reading the source. Run the chain and
+LOOK: `compose_00-fool_lg.py` → `frame.py` → `cardkit.py 00-fool` → `render_png.py
+00-fool --axis`, then OPEN the PNG and critique against the Harris scan: does the figure
+center on the axis guide? does the rainbow vortex read as a clean banded spiral (warm
+core → blue → red → violet) rather than mud? are the creatures (tiger, croc, dove) clear
+small marks, not clutter? Fix the compositor and repeat. Ship at ~80% once the render
+holds (2-3 passes max). See FABLE_TEMPLATE.md "Render & review loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Figure-dominant** — the leaping horned figure large and central, a tight vortex
+  hugging him.
+- **B. Vortex-dominant** — the rainbow spiral fills the whole field; the figure smaller,
+  dissolving into the color.
+- **C. Mandala-balanced** — figure centered on the axis with the creatures (tiger, croc,
+  dove) ringed in orbit around him.
+Tier: **full panel** — hero card, the deck's densest scene; composition is genuinely
+contested, so spend the full cost here.
 
 ## Title band
 Via `tools/frame.py -s majors -n 0`:

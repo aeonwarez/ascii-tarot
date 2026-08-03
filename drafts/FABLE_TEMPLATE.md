@@ -79,8 +79,36 @@ source; you must SEE the rendered card. Every pass runs the full chain and then 
 The per-card DIRECTIVES block (ranked 1-N, non-negotiable / makes-it-Thoth / garnish)
 carries everything specific to the card.
 
+## Full ultracode panel (creation + review)
+The full-quality production method for a card. Instead of one composer authoring blind
+and committing to its first instinct, run a multi-agent PANEL:
+
+1. **Three composer agents, in parallel.** Each commits to a DISTINCT composition
+   strategy for the card (different framing / dominant element / emphasis — see the
+   per-card "three strategies" seed in the prompt). Each composer runs the full Render
+   & review loop above end to end (3+ compose -> `render_png.py --axis` -> VIEW png ->
+   critique cycles, viewing its own PNG each pass) and returns its best candidate as
+   `.txt` + `.ans` + `-render.png`.
+2. **Three judge agents.** Score the three candidates against the Harris scan + the
+   axis guide on: iconographic fidelity, composition/energy, legibility at 47×32,
+   occlusion, and palette. Each judge ranks; tally the votes.
+3. **Synthesis / polish / integration (lead).** Take the winning candidate or MERGE the
+   strongest elements across candidates, run one final render & review pass, finalize
+   the `.txt` + `.ans`, then wire into `cardkit.CONFIGS` + `index.html`.
+
+Cost: ~300-450k tokens/card (3 composers @ ~60-90k + 3 judges @ ~25-40k + synthesis) —
+roughly 10-15x the solo cost for ~1.5-2x quality. Its real value is exploring three
+composition strategies instead of committing to the first instinct; reserve the full
+cost for cards whose composition is genuinely hard or contested. The MIDDLE PATH (one
+composer + the mandatory render loop + one adversarial critique pass, ~80-120k) captures
+most of the benefit for the rest; solo (~one pass) is the floor. State which tier a card
+runs at in its prompt.
+
 ## Every per-card prompt MUST
 - open by referencing THIS file (`FABLE_TEMPLATE.md`) and recap its invariants compactly;
 - restate the axis rule (center on col 23) in the directives;
 - include a "Render & review" line pointing at the loop above (`render_png.py --axis`);
-- state the reasoning tier (x-high / best).
+- state the reasoning tier (x-high / best);
+- include a "Full ultracode panel" block: the 3-composer / 3-judge / synthesis workflow
+  plus a card-specific THREE STRATEGIES seed (the three distinct composition directions
+  the composers should each take).

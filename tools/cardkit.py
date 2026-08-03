@@ -138,7 +138,28 @@ def emit(card, cfg):
     print(f"emitted {card}: preview + 16/256 ans")
 
 
+_STAR_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "sky": "#7a6fc0", "star": "#f0ecff", "babalon": "#e8e4f8",
+    "globe": "#d9a0b8", "gold": "#c9a23a", "nuith": "#b8c4e8",
+    "silver": "#a8d4e0", "fly": "#c09040", "rose": "#8f2f3f",
+    "crystal": "#c8c0e0", "earth": "#b8a8c8", "pyramid": "#c090a8",
+    "water": "#8fa8c8", "sig": "#55558a",
+}
+
+def _star_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "17-star-card.jpg", "title": "XVII . The Star",
+        "heb": "&#x5D4;", "default": "sky", "true": dict(_STAR_TRUE),
+    }
+
 CONFIGS = {
+    # Star baseline + ultracode-panel candidate slots
+    "17-star": _star_cfg("17-star"),
+    "17-star-v3a": _star_cfg("17-star-v3a"),
+    "17-star-v3b": _star_cfg("17-star-v3b"),
+    "17-star-v3c": _star_cfg("17-star-v3c"),
     "02-priestess": {
         "txt": "02-priestess-lg-v1.txt", "classes": "02-priestess-lg-classes.json",
         "img": "02-priestess-card.jpg", "title": "II . The Priestess",

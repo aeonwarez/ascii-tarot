@@ -2,12 +2,20 @@
 
 ## Invariants (recap of FABLE_TEMPLATE.md)
 Monospace Thoth tarot art. Canvas art 47×32, framed 51×39, aspect 0.64, exact
-leading whitespace preserved. Cells are 1:2 so draw circles/curves ~2:1 wider than
-tall. Courier New; extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X`
-allowed. Solid masses dithered for volume, never open outlines, lit directionally.
-Foreground figure drawn ON TOP; break background edges behind it. Full-bleed to the
-border. Keep outer frame + bottom title band. Color mapped to the Harris painting.
-Sign `aw` or unsigned, never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+leading whitespace preserved. **Center on the axis (col 23):** the figure's visual
+center sits on column 23, not its left edge. This card is bilaterally symmetric, so
+mirror everything about `AXIS = 23.0` with the `PM`/`PMB` helpers and verify with
+`--axis`. Cells are 1:2 so draw circles/curves ~2:1 wider than tall. Courier New;
+extended alphabet `´ ‾ ¡ ·` + line-glyphs `o O v V T L 7 U c C x X` allowed. Solid
+masses dithered for volume, never open outlines, lit directionally. Foreground figure
+drawn ON TOP; break background edges behind it. Full-bleed to the border. Keep outer
+frame + bottom title band. Color mapped to the Harris painting. Sign `aw` or unsigned,
+never `jgs`. Output one `.txt` + one `.ans` (256 + 16 fallback).
+
+## Reasoning tier
+Author at the highest tier (x-high / best). Low-volume, high-craft work; the marginal
+quality shows in the esoteric synthesis and clean compositor structure. It does NOT fix
+placement drift or veil flatness — for those, use the render & review loop.
 
 ## Subject
 **Atu II — The Priestess.** Hebrew letter Gimel ("camel"), attribution the Moon in
@@ -92,6 +100,30 @@ TEAL/EMERALD GREEN with a radiant white/cyan light-web, a gold-green crown glow,
 pale-gold crescent cup, and a warm multicolor foreground (yellow spiral shell, olive
 flower, purple grapes, faceted crystals, white camel). The `.ans` carries the
 blue-green field vs. white rays vs. warm gold cup/foreground contrast.
+
+## Render & review
+Do not judge symmetry, veil depth, occlusion, or palette by reading the source. Run the
+chain and LOOK: `compose_02-priestess_lg.py` → `frame.py` → `cardkit.py 02-priestess` →
+`render_png.py 02-priestess --axis`, then OPEN the PNG and critique against the Harris
+scan: does she sit dead on the axis guide? does the veil read as a translucent volume
+rather than flat wallpaper? is she solid ON TOP of the net? Fix the compositor and
+repeat. Ship at ~80% once the render holds (2-3 passes max). See FABLE_TEMPLATE.md
+"Render & review loop."
+
+## Full ultracode panel (creation + review)
+Produce this card via the FABLE_TEMPLATE.md full ultracode panel: three composer agents
+in parallel (each running the Render & review loop above to a finished candidate), three
+judges scoring each against the Harris scan + axis guide, then synthesis / polish /
+integration merging the strongest read. Three strategies to seed the composers:
+- **A. Veil-dominant** — the crystalline light-web fills the whole field; the figure
+  emerges from it, seen through the net.
+- **B. Figure + cup dominant** — the enthroned goddess and the crescent Moon-cup are the
+  hero; the veil is secondary texture.
+- **C. Architecture-symmetric** — the throne and the two pillars framed strongly, the
+  veil stretched between them.
+Tier: **middle path** — strict bilateral symmetry makes placement low-risk; run one
+composer + the render loop + one adversarial critique, and escalate to full panel only
+if the light-veil won't read as a translucent volume.
 
 ## Title band
 Via `tools/frame.py -s majors -n 2`:
