@@ -28,6 +28,12 @@ LABELS = {
         "v3c": "C · juggling-orbit · judges 4 pts",
         "final": "synthesis · v3b base + v3a foot-wings + v3c kether V",
     },
+    "02-priestess": {
+        "v3a": "A · veil-dominant · judges 8 pts · winner",
+        "v3b": "B · figure + cup dominant · judges 6 pts",
+        "v3c": "C · architecture-symmetric · judges 4 pts",
+        "final": "synthesis · v3a veil + v3b figure/camel + v3c gold cup",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",
