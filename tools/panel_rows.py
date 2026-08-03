@@ -52,6 +52,12 @@ LABELS = {
         "v3c": "C · shrine-frame · judges 5 pts",
         "final": "synthesis · v3b duality + v3c statues/grail/egg + v3a hood",
     },
+    "07-chariot": {
+        "v3a": "A · grail dominant · judges 8 pts · winner",
+        "v3b": "B · enthroned-figure · judges 7 pts · chassis",
+        "v3c": "C · vehicle-symmetry · judges 3 pts",
+        "final": "synthesis · v3b king/chassis + v3a grail transplant + v3c moon",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",

@@ -16,6 +16,7 @@ SECTIONS = {
     "01-magus-final": "I THE MAGUS",
     "05-hierophant-final": "V THE HIEROPHANT",
     "06-lovers-final": "VI THE LOVERS",
+    "07-chariot-final": "VII THE CHARIOT",
 }
 
 path = os.path.join(ROOT, "index.html")
