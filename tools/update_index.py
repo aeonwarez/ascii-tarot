@@ -15,6 +15,7 @@ SECTIONS = {
     # panel finals land in the main slot where only a placeholder existed
     "01-magus-final": "I THE MAGUS",
     "05-hierophant-final": "V THE HIEROPHANT",
+    "06-lovers-final": "VI THE LOVERS",
 }
 
 path = os.path.join(ROOT, "index.html")

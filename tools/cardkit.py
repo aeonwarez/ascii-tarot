@@ -271,6 +271,23 @@ def _lovers_cfg(stem):
         "heb": "&#x5D6;", "default": "field", "true": dict(_LOVERS_TRUE),
     }
 
+_CHARIOT_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#9ab0d0", "swirl": "#6a90c8", "canopy": "#2a5aa8",
+    "squig": "#e8e8f0", "pillar": "#b06a3a", "wheel": "#e03a20",
+    "armour": "#e8a830", "visor": "#c88a20", "crab": "#8a9a9a",
+    "ring": "#3a5ac8", "core": "#d83a2a", "glow": "#c8d0f0",
+    "hands": "#f0d8b0", "sphinxd": "#55554e", "sphinxl": "#d0ccc0",
+    "dais": "#c08a4a", "rosette": "#5a9a8a", "sig": "#55558a",
+}
+
+def _chariot_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "07-chariot-card.jpg", "title": "VII . The Chariot",
+        "heb": "&#x5D7;", "default": "field", "true": dict(_CHARIOT_TRUE),
+    }
+
 _MOON_TRUE = {
     "frame": "#8f8fb8", "title": "#c8c8d8",
     "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
@@ -334,6 +351,11 @@ CONFIGS = {
     "06-lovers-v3b": _lovers_cfg("06-lovers-v3b"),
     "06-lovers-v3c": _lovers_cfg("06-lovers-v3c"),
     "06-lovers-final": _lovers_cfg("06-lovers-final"),
+    # Chariot panel slots (no baseline card yet)
+    "07-chariot-v3a": _chariot_cfg("07-chariot-v3a"),
+    "07-chariot-v3b": _chariot_cfg("07-chariot-v3b"),
+    "07-chariot-v3c": _chariot_cfg("07-chariot-v3c"),
+    "07-chariot-final": _chariot_cfg("07-chariot-final"),
     # Priestess baseline + panel slots
     "02-priestess": _priestess_cfg("02-priestess"),
     "02-priestess-v3a": _priestess_cfg("02-priestess-v3a"),

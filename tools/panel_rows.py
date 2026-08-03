@@ -46,6 +46,12 @@ LABELS = {
         "v3c": "C · flame-field · judges 4 pts",
         "final": "synthesis · v3a sulphur glyph + v3b field/shaft + v3c crown/lamb",
     },
+    "06-lovers": {
+        "v3a": "A · sacred-spine · judges 4 pts",
+        "v3b": "B · duality · judges 9 pts · unanimous winner",
+        "v3c": "C · shrine-frame · judges 5 pts",
+        "final": "synthesis · v3b duality + v3c statues/grail/egg + v3a hood",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",
