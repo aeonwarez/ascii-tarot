@@ -154,12 +154,89 @@ def _star_cfg(stem):
         "heb": "&#x5D4;", "default": "sky", "true": dict(_STAR_TRUE),
     }
 
+_FOOL_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "bg": "#c9a840", "sky": "#6a8fd4", "ring0": "#d8d8e8",
+    "ring1": "#c8a8d8", "ring2": "#a8d8c8", "fool": "#4a9950",
+    "gold": "#e8c84a", "sun": "#ffaf2a", "flower": "#d8e8f5",
+    "dove": "#f0f0f8", "fly": "#e09520", "tiger": "#e87830",
+    "croc": "#6a8f4a", "grapes": "#3a5a8f", "coins": "#a8c8e0",
+    "sig": "#8a7a4a",
+    # rainbow vortex bands (fable5: warm core -> blue -> red -> violet)
+    "vy": "#f5c842", "vo": "#f09838", "vb": "#5878d0",
+    "vr": "#d85040", "vv": "#9a70d0", "vg": "#68b060",
+    "water": "#8fa8c8", "dew": "#f5f0dc",
+}
+
+def _fool_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "00-fool-card.jpg", "title": "0 . The Fool",
+        "heb": "&#x5D0;", "default": "bg", "true": dict(_FOOL_TRUE),
+    }
+
+_MAGUS_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#3a5a80", "rays": "#4a7a9a", "indigo": "#3a3a68",
+    "kether": "#f0eef8", "lilac": "#c8b8d8", "web": "#8fa8c8",
+    "figure": "#e8c040", "gold": "#ffd75a", "caduceus": "#e0b040",
+    "serpent": "#c8a030", "wings": "#e09520", "dove": "#f0f0f8",
+    "ape": "#9a9a7a", "obj": "#e8d08a", "flame": "#f09838",
+    "egg": "#d8d8e8", "sun": "#ffd700", "sig": "#55558a",
+}
+
+def _magus_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "01-magus-card.jpg", "title": "I . The Magus",
+        "heb": "&#x5D1;", "default": "field", "true": dict(_MAGUS_TRUE),
+    }
+
+_HIER_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#2a3a6a", "stars": "#c8d0f0",
+    "robe": "#c23a2a", "orange": "#e07038", "face": "#e8b890",
+    "crown": "#e0c04a", "hex": "#e8d44a", "penta": "#f0ecd8",
+    "child": "#a8d8c8", "woman": "#e8d0d8", "sword": "#c8c8d8",
+    "moon": "#d8d8e8", "bull": "#8a6a4a", "throne": "#7a5a3a",
+    "olive": "#8a8a5a", "eleph": "#9a9ab0", "kerub": "#8fa8c8",
+    "oriel": "#c8b8d8", "rose": "#d87a8a", "snake": "#68b060",
+    "dove": "#f0f0f8", "nails": "#c8c8d8", "wand": "#e0c04a",
+    "ringr": "#d85040", "ringg": "#68b060", "ringy": "#e8e0a0",
+    "sig": "#55558a",
+}
+
+def _hier_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "05-hierophant-card.jpg", "title": "V . The Hierophant",
+        "heb": "&#x5D5;", "default": "field", "true": dict(_HIER_TRUE),
+    }
+
 CONFIGS = {
     # Star baseline + ultracode-panel candidate slots
     "17-star": _star_cfg("17-star"),
     "17-star-v3a": _star_cfg("17-star-v3a"),
     "17-star-v3b": _star_cfg("17-star-v3b"),
     "17-star-v3c": _star_cfg("17-star-v3c"),
+    # Fool baseline + ultracode-panel candidate slots + synthesis
+    "00-fool": _fool_cfg("00-fool"),
+    "00-fool-v3a": _fool_cfg("00-fool-v3a"),
+    "00-fool-v3b": _fool_cfg("00-fool-v3b"),
+    "00-fool-v3c": _fool_cfg("00-fool-v3c"),
+    "00-fool-final": _fool_cfg("00-fool-final"),
+    # Magus panel slots
+    "01-magus": _magus_cfg("01-magus"),
+    "01-magus-v3a": _magus_cfg("01-magus-v3a"),
+    "01-magus-v3b": _magus_cfg("01-magus-v3b"),
+    "01-magus-v3c": _magus_cfg("01-magus-v3c"),
+    "01-magus-final": _magus_cfg("01-magus-final"),
+    # Hierophant panel slots (no reference scan yet; palette from the prompt)
+    "05-hierophant": _hier_cfg("05-hierophant"),
+    "05-hierophant-v3a": _hier_cfg("05-hierophant-v3a"),
+    "05-hierophant-v3b": _hier_cfg("05-hierophant-v3b"),
+    "05-hierophant-v3c": _hier_cfg("05-hierophant-v3c"),
+    "05-hierophant-final": _hier_cfg("05-hierophant-final"),
     "02-priestess": {
         "txt": "02-priestess-lg-v1.txt", "classes": "02-priestess-lg-classes.json",
         "img": "02-priestess-card.jpg", "title": "II . The Priestess",

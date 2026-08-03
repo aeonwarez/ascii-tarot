@@ -104,6 +104,17 @@ composer + the mandatory render loop + one adversarial critique pass, ~80-120k) 
 most of the benefit for the rest; solo (~one pass) is the floor. State which tier a card
 runs at in its prompt.
 
+## Site wiring after the panel (index.html) — standing convention
+After a card's ultracode panel completes, its index.html section shows THREE rows:
+row 1 (unchanged): Harris reference · the card's existing/previous ascii · must-have
+checklist; row 2: the three panel candidates side by side; row 3: the synthesis
+alone, centered. `tools/panel_rows.py <card> "<SECTION MARKER>"` inserts/refreshes
+rows 2-3 idempotently — add each new card to its LABELS dict (strategy names +
+judge tally). Files keep the panel stems `<card>-v3a/-v3b/-v3c` + `<card>-final`;
+a baseline stem that already holds a shipped card is left untouched. If the main
+slot is still an "art in progress" placeholder, the synthesis ALSO replaces it in
+row 1 (add the `-final` config key to `update_index.py` SECTIONS).
+
 ## Every per-card prompt MUST
 - open by referencing THIS file (`FABLE_TEMPLATE.md`) and recap its invariants compactly;
 - restate the axis rule (center on col 23) in the directives;
