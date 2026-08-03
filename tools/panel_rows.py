@@ -34,6 +34,12 @@ LABELS = {
         "v3c": "C · spiral-field · judges 7 pts",
         "final": "synthesis · v3a chassis + v3c spiral motion + v3b figure",
     },
+    "18-moon": {
+        "v3a": "A · architectural-symmetry · judges 4 pts",
+        "v3b": "B · path-recession · judges 8 pts · winner",
+        "v3c": "C · atmosphere · judges 6 pts",
+        "final": "synthesis · v3b road + v3c towers/scarab + v3a anubis",
+    },
     "05-hierophant": {
         "v3a": "A · nested-geometry · judges 3 pts",
         "v3b": "B · enthroned-figure · judges 9 pts · winner",
