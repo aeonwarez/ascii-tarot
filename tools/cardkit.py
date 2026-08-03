@@ -213,6 +213,39 @@ def _hier_cfg(stem):
         "heb": "&#x5D5;", "default": "field", "true": dict(_HIER_TRUE),
     }
 
+_MOON_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
+    "cone": "#b8c8d8", "anubis": "#d4884a", "jackal": "#7a7a8a",
+    "flame": "#e07840", "water": "#8a98b0", "wavered": "#c25a5a",
+    "waveblue": "#5a78c2", "aura": "#e8ce7a", "sun": "#ffaf2a",
+    "scarab": "#9a9aa8", "sig": "#55558a",
+}
+
+def _moon_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "18-moon-card.jpg", "title": "XVIII . The Moon",
+        "heb": "&#x5E7;", "default": "tower", "true": dict(_MOON_TRUE),
+    }
+
+_PRIESTESS_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "veil": "#cfe8f0", "lattice": "#9fd8e8", "field": "#3a5aa8",
+    "figure": "#f0ecd8", "crown": "#cfd85a", "wings": "#8fd8c8",
+    "cup": "#e8ce7a", "pillar": "#6a78b8", "camel": "#f5f5f5",
+    "crystal": "#d8c8e8", "flower": "#b08a6a", "cone": "#6a9950",
+    "grapes": "#8a5fb8", "shell": "#e0c04a", "pyramid": "#e09a9a",
+    "sig": "#55558a",
+}
+
+def _priestess_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "02-priestess-card.jpg", "title": "II . The Priestess",
+        "heb": "&#x5D2;", "default": "veil", "true": dict(_PRIESTESS_TRUE),
+    }
+
 CONFIGS = {
     # Star baseline + ultracode-panel candidate slots
     "17-star": _star_cfg("17-star"),
@@ -238,20 +271,18 @@ CONFIGS = {
     "05-hierophant-v3b": _hier_cfg("05-hierophant-v3b"),
     "05-hierophant-v3c": _hier_cfg("05-hierophant-v3c"),
     "05-hierophant-final": _hier_cfg("05-hierophant-final"),
-    "02-priestess": {
-        "txt": "02-priestess-lg-v1.txt", "classes": "02-priestess-lg-classes.json",
-        "img": "02-priestess-card.jpg", "title": "II . The Priestess",
-        "heb": "&#x5D2;", "default": "veil",
-        "true": {
-            "frame": "#8f8fb8", "title": "#c8c8d8",
-            "veil": "#cfe8f0", "lattice": "#9fd8e8", "field": "#3a5aa8",
-            "figure": "#f0ecd8", "crown": "#cfd85a", "wings": "#8fd8c8",
-            "cup": "#e8ce7a", "pillar": "#6a78b8", "camel": "#f5f5f5",
-            "crystal": "#d8c8e8", "flower": "#b08a6a", "cone": "#6a9950",
-            "grapes": "#8a5fb8", "shell": "#e0c04a", "pyramid": "#e09a9a",
-            "sig": "#55558a",
-        },
-    },
+    # Priestess baseline + panel slots
+    "02-priestess": _priestess_cfg("02-priestess"),
+    "02-priestess-v3a": _priestess_cfg("02-priestess-v3a"),
+    "02-priestess-v3b": _priestess_cfg("02-priestess-v3b"),
+    "02-priestess-v3c": _priestess_cfg("02-priestess-v3c"),
+    "02-priestess-final": _priestess_cfg("02-priestess-final"),
+    # Moon baseline + panel slots (palette ported from legacy moon_html.py)
+    "18-moon": _moon_cfg("18-moon"),
+    "18-moon-v3a": _moon_cfg("18-moon-v3a"),
+    "18-moon-v3b": _moon_cfg("18-moon-v3b"),
+    "18-moon-v3c": _moon_cfg("18-moon-v3c"),
+    "18-moon-final": _moon_cfg("18-moon-final"),
     "03-empress": {
         "txt": "03-empress-lg-v1.txt", "classes": "03-empress-lg-classes.json",
         "img": "03-empress-card.jpg", "title": "III . The Empress",

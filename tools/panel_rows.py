@@ -28,6 +28,12 @@ LABELS = {
         "v3c": "C · juggling-orbit · judges 4 pts",
         "final": "synthesis · v3b base + v3a foot-wings + v3c kether V",
     },
+    "17-star": {
+        "v3a": "A · globe-as-stage · judges 7 pts · base",
+        "v3b": "B · figure-dominant · judges 4 pts",
+        "v3c": "C · spiral-field · judges 7 pts",
+        "final": "synthesis · v3a chassis + v3c spiral motion + v3b figure",
+    },
     "05-hierophant": {
         "v3a": "A · nested-geometry · judges 3 pts",
         "v3b": "B · enthroned-figure · judges 9 pts · winner",
