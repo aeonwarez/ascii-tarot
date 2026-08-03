@@ -34,6 +34,12 @@ LABELS = {
         "v3c": "C · architecture-symmetric · judges 4 pts",
         "final": "synthesis · v3a veil + v3b figure/camel + v3c gold cup",
     },
+    "03-empress": {
+        "v3a": "A · figure + salt-arms · judges 5 pts",
+        "v3b": "B · vegetal-throne · judges 5 pts",
+        "v3c": "C · heraldry-framed · judges 8 pts · winner",
+        "final": "synthesis · v3c salt-glyph + v3a crown/hair + v3b field",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",

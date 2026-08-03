@@ -213,6 +213,44 @@ def _hier_cfg(stem):
         "heb": "&#x5D5;", "default": "field", "true": dict(_HIER_TRUE),
     }
 
+_EMPRESS_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#69a860", "arch": "#5a88c8", "reeds": "#4a78b8",
+    "crown": "#5a9950", "cross": "#e0c04a", "face": "#e8cdb0",
+    "hair": "#e8e0d0", "blouse": "#d86a6a", "lotus": "#5a78d8",
+    "stems": "#69a860", "skirt": "#69b868", "belt": "#e0c04a",
+    "moon": "#b8b8c8", "throne": "#5a88c8", "pelican": "#f0ece0",
+    "shield": "#d8d060", "eagle": "#f5f5ef", "rose": "#f0e8e8",
+    "floor": "#4a9a98", "fleur": "#8fb8d8", "bird": "#c8c8d8",
+    "sig": "#55558a",
+}
+
+def _empress_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "03-empress-card.jpg", "title": "III . The Empress",
+        "heb": "&#x5D3;", "default": "field", "true": dict(_EMPRESS_TRUE),
+    }
+
+_EMPEROR_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#c23a2a", "flames": "#e05a3a", "sunrays": "#ffc832",
+    "cross": "#ffd700",
+    "ram": "#e8d0c0", "crown": "#ffc832", "face": "#e8b890",
+    "robe": "#c8452a", "pattern": "#e8a04a", "sceptre": "#e0c04a",
+    "light": "#f0f0e8", "orb": "#a82a3a", "star": "#ffd700",
+    "skin": "#e8b890", "shield": "#e8d44a", "eagle": "#c85a2a",
+    "lamb": "#f0ecd8", "floor": "#8a2a30", "fleur": "#e0a84a",
+    "sig": "#55558a",
+}
+
+def _emperor_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "04-emperor-card.jpg", "title": "IV . The Emperor",
+        "heb": "&#x5E6;", "default": "field", "true": dict(_EMPEROR_TRUE),
+    }
+
 _MOON_TRUE = {
     "frame": "#8f8fb8", "title": "#c8c8d8",
     "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
@@ -283,38 +321,16 @@ CONFIGS = {
     "18-moon-v3b": _moon_cfg("18-moon-v3b"),
     "18-moon-v3c": _moon_cfg("18-moon-v3c"),
     "18-moon-final": _moon_cfg("18-moon-final"),
-    "03-empress": {
-        "txt": "03-empress-lg-v1.txt", "classes": "03-empress-lg-classes.json",
-        "img": "03-empress-card.jpg", "title": "III . The Empress",
-        "heb": "&#x5D3;", "default": "field",
-        "true": {
-            "frame": "#8f8fb8", "title": "#c8c8d8",
-            "field": "#69a860", "arch": "#5a88c8", "reeds": "#4a78b8",
-            "crown": "#5a9950", "cross": "#e0c04a", "face": "#e8cdb0",
-            "hair": "#e8e0d0", "blouse": "#d86a6a", "lotus": "#5a78d8",
-            "stems": "#69a860", "skirt": "#69b868", "belt": "#e0c04a",
-            "moon": "#b8b8c8", "throne": "#5a88c8", "pelican": "#f0ece0",
-            "shield": "#d8d060", "eagle": "#f5f5ef", "rose": "#f0e8e8",
-            "floor": "#4a9a98", "fleur": "#8fb8d8", "bird": "#c8c8d8",
-            "sig": "#55558a",
-        },
-    },
-    "04-emperor": {
-        "txt": "04-emperor-lg-v1.txt", "classes": "04-emperor-lg-classes.json",
-        "img": "04-emperor-card.jpg", "title": "IV . The Emperor",
-        "heb": "&#x5E6;", "default": "field",
-        "true": {
-            "frame": "#8f8fb8", "title": "#c8c8d8",
-            "field": "#c23a2a", "flames": "#e05a3a", "sunrays": "#ffc832",
-            "cross": "#ffd700",
-            "ram": "#e8d0c0", "crown": "#ffc832", "face": "#e8b890",
-            "robe": "#c8452a", "pattern": "#e8a04a", "sceptre": "#e0c04a",
-            "light": "#f0f0e8", "orb": "#a82a3a", "star": "#ffd700",
-            "skin": "#e8b890", "shield": "#e8d44a", "eagle": "#c85a2a",
-            "lamb": "#f0ecd8", "floor": "#8a2a30", "fleur": "#e0a84a",
-            "sig": "#55558a",
-        },
-    },
+    "03-empress": _empress_cfg("03-empress"),
+    "03-empress-v3a": _empress_cfg("03-empress-v3a"),
+    "03-empress-v3b": _empress_cfg("03-empress-v3b"),
+    "03-empress-v3c": _empress_cfg("03-empress-v3c"),
+    "03-empress-final": _empress_cfg("03-empress-final"),
+    "04-emperor": _emperor_cfg("04-emperor"),
+    "04-emperor-v3a": _emperor_cfg("04-emperor-v3a"),
+    "04-emperor-v3b": _emperor_cfg("04-emperor-v3b"),
+    "04-emperor-v3c": _emperor_cfg("04-emperor-v3c"),
+    "04-emperor-final": _emperor_cfg("04-emperor-final"),
 }
 
 if __name__ == "__main__":
