@@ -219,6 +219,7 @@ CONFIGS = {
     "17-star-v3a": _star_cfg("17-star-v3a"),
     "17-star-v3b": _star_cfg("17-star-v3b"),
     "17-star-v3c": _star_cfg("17-star-v3c"),
+    "17-star-final": _star_cfg("17-star-final"),
     # Fool baseline + ultracode-panel candidate slots + synthesis
     "00-fool": _fool_cfg("00-fool"),
     "00-fool-v3a": _fool_cfg("00-fool-v3a"),

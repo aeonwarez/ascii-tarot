@@ -12,6 +12,9 @@ SECTIONS = {
     "02-priestess": "II THE PRIESTESS",
     "03-empress": "III THE EMPRESS",
     "04-emperor": "IV THE EMPEROR",
+    # panel finals land in the main slot where only a placeholder existed
+    "01-magus-final": "I THE MAGUS",
+    "05-hierophant-final": "V THE HIEROPHANT",
 }
 
 path = os.path.join(ROOT, "index.html")
@@ -27,7 +30,10 @@ for card, marker in SECTIONS.items():
     section_re = re.compile(
         r"(<!-- =+ " + re.escape(marker) + r" =+ -->.*?<div class=\"col-ascii\">)"
         r"<pre>.*?</pre>", re.DOTALL)
-    page, n = section_re.subn(r"\1" + "<pre>" + html + "</pre>", page, count=1)
+    # function repl: card html may contain backslash sequences (\o/ etc.)
+    # that re's template parser would reject as bad escapes
+    page, n = section_re.subn(
+        lambda m, h=html: m.group(1) + "<pre>" + h + "</pre>", page, count=1)
     print(f"{card}: {'replaced' if n else 'MARKER NOT FOUND'}")
 
 with open(path, "w") as f:

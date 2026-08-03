@@ -23,16 +23,16 @@ LABELS = {
         "final": "synthesis · v3c base + v3a figure + v3b dove/coins",
     },
     "01-magus": {
-        "v3a": "A · mercury-glyph dominant",
-        "v3b": "B · caduceus-spine dominant",
-        "v3c": "C · juggling-orbit dominant",
-        "final": "synthesis",
+        "v3a": "A · mercury-glyph figure · judges 7 pts",
+        "v3b": "B · caduceus-spine · judges 7 pts · base",
+        "v3c": "C · juggling-orbit · judges 4 pts",
+        "final": "synthesis · v3b base + v3a foot-wings + v3c kether V",
     },
     "05-hierophant": {
-        "v3a": "A · nested-geometry dominant",
-        "v3b": "B · enthroned-figure dominant",
-        "v3c": "C · shrine-symmetry dominant",
-        "final": "synthesis",
+        "v3a": "A · nested-geometry · judges 3 pts",
+        "v3b": "B · enthroned-figure · judges 9 pts · winner",
+        "v3c": "C · shrine-symmetry · judges 6 pts",
+        "final": "synthesis · v3b base + v3a hexagram + v3c pentagram/child",
     },
 }
 
