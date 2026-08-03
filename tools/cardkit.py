@@ -251,6 +251,26 @@ def _emperor_cfg(stem):
         "heb": "&#x5E6;", "default": "field", "true": dict(_EMPEROR_TRUE),
     }
 
+_LOVERS_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#e8a83a", "bands": "#d85830", "trunks": "#5a4858",
+    "hood": "#c090a0", "tent": "#f0ece0", "rays": "#c8c0d8",
+    "cupid": "#e88830", "bow": "#e0c04a", "king": "#6a4a3a",
+    "queen": "#f0d8a0", "crown": "#ffc832", "silver": "#c8c8d8",
+    "ermine": "#f0ece8", "robek": "#e09030", "robeq": "#d84a2a",
+    "childw": "#f0e0d0", "childb": "#7a5a4a", "grail": "#e0a030",
+    "lance": "#c04030", "lion": "#e05020", "eagle": "#f0f0e8",
+    "egg": "#b0a8a0", "serpent": "#b04a5a", "carpet": "#c02a2a",
+    "statue": "#d8c8b8", "sig": "#55558a",
+}
+
+def _lovers_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "06-lovers-card.jpg", "title": "VI . The Lovers",
+        "heb": "&#x5D6;", "default": "field", "true": dict(_LOVERS_TRUE),
+    }
+
 _MOON_TRUE = {
     "frame": "#8f8fb8", "title": "#c8c8d8",
     "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
@@ -309,6 +329,11 @@ CONFIGS = {
     "05-hierophant-v3b": _hier_cfg("05-hierophant-v3b"),
     "05-hierophant-v3c": _hier_cfg("05-hierophant-v3c"),
     "05-hierophant-final": _hier_cfg("05-hierophant-final"),
+    # Lovers panel slots (no baseline card yet)
+    "06-lovers-v3a": _lovers_cfg("06-lovers-v3a"),
+    "06-lovers-v3b": _lovers_cfg("06-lovers-v3b"),
+    "06-lovers-v3c": _lovers_cfg("06-lovers-v3c"),
+    "06-lovers-final": _lovers_cfg("06-lovers-final"),
     # Priestess baseline + panel slots
     "02-priestess": _priestess_cfg("02-priestess"),
     "02-priestess-v3a": _priestess_cfg("02-priestess-v3a"),

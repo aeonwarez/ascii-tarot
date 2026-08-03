@@ -40,6 +40,12 @@ LABELS = {
         "v3c": "C · heraldry-framed · judges 8 pts · winner",
         "final": "synthesis · v3c salt-glyph + v3a crown/hair + v3b field",
     },
+    "04-emperor": {
+        "v3a": "A · sulphur-glyph silhouette · judges 7 pts · base",
+        "v3b": "B · throne-architecture · judges 7 pts",
+        "v3c": "C · flame-field · judges 4 pts",
+        "final": "synthesis · v3a sulphur glyph + v3b field/shaft + v3c crown/lamb",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",
