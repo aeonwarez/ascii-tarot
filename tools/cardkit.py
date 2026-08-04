@@ -305,6 +305,23 @@ def _adjust_cfg(stem):
         "heb": "&#x5DC;", "default": "ground", "true": dict(_ADJUST_TRUE),
     }
 
+_LUST_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#6a4a78", "dusk": "#4a3358", "sky": "#b8b8c8",
+    "beast": "#e0a030", "mane": "#c8862a", "face": "#e8c890",
+    "babalon": "#e8a848", "hair": "#f0c860", "grail": "#f05a2a",
+    "flame": "#ff8838", "reins": "#d83a2a", "circles": "#d86a7a",
+    "burst": "#68c8b8", "serpents": "#c89a4a", "saints": "#9a8aa8",
+    "sig": "#55558a",
+}
+
+def _lust_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "11-lust-card.jpg", "title": "XI . Lust",
+        "heb": "&#x5D8;", "default": "field", "true": dict(_LUST_TRUE),
+    }
+
 _MOON_TRUE = {
     "frame": "#8f8fb8", "title": "#c8c8d8",
     "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
@@ -378,6 +395,11 @@ CONFIGS = {
     "08-adjustment-v3b": _adjust_cfg("08-adjustment-v3b"),
     "08-adjustment-v3c": _adjust_cfg("08-adjustment-v3c"),
     "08-adjustment-final": _adjust_cfg("08-adjustment-final"),
+    # Lust panel slots (no baseline card yet)
+    "11-lust-v3a": _lust_cfg("11-lust-v3a"),
+    "11-lust-v3b": _lust_cfg("11-lust-v3b"),
+    "11-lust-v3c": _lust_cfg("11-lust-v3c"),
+    "11-lust-final": _lust_cfg("11-lust-final"),
     # Priestess baseline + panel slots
     "02-priestess": _priestess_cfg("02-priestess"),
     "02-priestess-v3a": _priestess_cfg("02-priestess-v3a"),

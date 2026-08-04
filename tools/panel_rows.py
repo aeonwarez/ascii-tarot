@@ -64,6 +64,12 @@ LABELS = {
         "v3c": "C · balance · judges 8 pts · winner",
         "final": "synthesis · v3c apparatus + v3a vesica/point + v3b dancer",
     },
+    "11-lust": {
+        "v3a": "A · rider dominant · judges 8 pts · winner",
+        "v3b": "B · grail dominant · judges 7 pts",
+        "v3c": "C · beast dominant · judges 3 pts",
+        "final": "synthesis · v3a rider-surge + v3b chalice/field + v3c circles",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",
