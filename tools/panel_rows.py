@@ -58,6 +58,12 @@ LABELS = {
         "v3c": "C · vehicle-symmetry · judges 3 pts",
         "final": "synthesis · v3b king/chassis + v3a grail transplant + v3c moon",
     },
+    "08-adjustment": {
+        "v3a": "A · vesica-frame · judges 7 pts",
+        "v3b": "B · figure · judges 3 pts",
+        "v3c": "C · balance · judges 8 pts · winner",
+        "final": "synthesis · v3c apparatus + v3a vesica/point + v3b dancer",
+    },
     "17-star": {
         "v3a": "A · globe-as-stage · judges 7 pts · base",
         "v3b": "B · figure-dominant · judges 4 pts",

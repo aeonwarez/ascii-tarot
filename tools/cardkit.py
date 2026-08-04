@@ -288,6 +288,23 @@ def _chariot_cfg(stem):
         "heb": "&#x5D7;", "default": "field", "true": dict(_CHARIOT_TRUE),
     }
 
+_ADJUST_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "ground": "#d8d878", "lattice": "#9ab0d0", "harle": "#6a8a4a",
+    "robe": "#a8c070", "figure": "#c8d8a0", "skin": "#d8c8a0",
+    "mask": "#4a6ac8", "wings": "#7a9ad8", "crown": "#4a7a88",
+    "sword": "#3a4a58", "chains": "#3a5a4a", "pan": "#2a4a3a",
+    "bubble": "#c8d8e8", "sphb": "#5a88c8", "sphg": "#2a5a4a",
+    "spike": "#2a4a38", "rays": "#b8c8e0", "sig": "#55558a",
+}
+
+def _adjust_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "08-adjustment-card.jpg", "title": "VIII . Adjustment",
+        "heb": "&#x5DC;", "default": "ground", "true": dict(_ADJUST_TRUE),
+    }
+
 _MOON_TRUE = {
     "frame": "#8f8fb8", "title": "#c8c8d8",
     "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
@@ -356,6 +373,11 @@ CONFIGS = {
     "07-chariot-v3b": _chariot_cfg("07-chariot-v3b"),
     "07-chariot-v3c": _chariot_cfg("07-chariot-v3c"),
     "07-chariot-final": _chariot_cfg("07-chariot-final"),
+    # Adjustment panel slots (no baseline card yet)
+    "08-adjustment-v3a": _adjust_cfg("08-adjustment-v3a"),
+    "08-adjustment-v3b": _adjust_cfg("08-adjustment-v3b"),
+    "08-adjustment-v3c": _adjust_cfg("08-adjustment-v3c"),
+    "08-adjustment-final": _adjust_cfg("08-adjustment-final"),
     # Priestess baseline + panel slots
     "02-priestess": _priestess_cfg("02-priestess"),
     "02-priestess-v3a": _priestess_cfg("02-priestess-v3a"),
