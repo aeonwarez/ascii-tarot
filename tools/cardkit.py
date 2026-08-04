@@ -322,6 +322,22 @@ def _lust_cfg(stem):
         "heb": "&#x5D8;", "default": "field", "true": dict(_LUST_TRUE),
     }
 
+_FORTUNE_TRUE = {
+    "frame": "#8f8fb8", "title": "#c8c8d8",
+    "field": "#5a4a98", "plume": "#7a68b8", "dusk": "#463878",
+    "wheel": "#e0b048", "hub": "#f0c848", "sphinx": "#e8c060",
+    "sword": "#c8c8d8", "herm": "#b8a878", "plate": "#8a98b8",
+    "typhon": "#d08858", "starsg": "#e8c040", "starsb": "#6a88d8",
+    "bolt": "#f09030", "tri": "#7a5aa8", "sig": "#55558a",
+}
+
+def _fortune_cfg(stem):
+    return {
+        "txt": f"{stem}-lg-v1.txt", "classes": f"{stem}-lg-classes.json",
+        "img": "10-fortune-card.jpg", "title": "X . Fortune",
+        "heb": "&#x5DB;", "default": "field", "true": dict(_FORTUNE_TRUE),
+    }
+
 _MOON_TRUE = {
     "frame": "#8f8fb8", "title": "#c8c8d8",
     "moon": "#e8d8a0", "blood": "#c23a4a", "tower": "#4a5288",
@@ -395,6 +411,11 @@ CONFIGS = {
     "08-adjustment-v3b": _adjust_cfg("08-adjustment-v3b"),
     "08-adjustment-v3c": _adjust_cfg("08-adjustment-v3c"),
     "08-adjustment-final": _adjust_cfg("08-adjustment-final"),
+    # Fortune panel slots (no baseline card yet)
+    "10-fortune-v3a": _fortune_cfg("10-fortune-v3a"),
+    "10-fortune-v3b": _fortune_cfg("10-fortune-v3b"),
+    "10-fortune-v3c": _fortune_cfg("10-fortune-v3c"),
+    "10-fortune-final": _fortune_cfg("10-fortune-final"),
     # Lust panel slots (no baseline card yet)
     "11-lust-v3a": _lust_cfg("11-lust-v3a"),
     "11-lust-v3b": _lust_cfg("11-lust-v3b"),

@@ -64,6 +64,12 @@ LABELS = {
         "v3c": "C · balance · judges 8 pts · winner",
         "final": "synthesis · v3c apparatus + v3a vesica/point + v3b dancer",
     },
+    "10-fortune": {
+        "v3a": "A · wheel dominant · judges 6 pts",
+        "v3b": "B · riders dominant · judges 9 pts · unanimous winner",
+        "v3c": "C · cosmos dominant · judges 3 pts",
+        "final": "synthesis · v3b gunas/sphinx + v3a rim/stars/bolts + v3c whirlpool",
+    },
     "11-lust": {
         "v3a": "A · rider dominant · judges 8 pts · winner",
         "v3b": "B · grail dominant · judges 7 pts",
